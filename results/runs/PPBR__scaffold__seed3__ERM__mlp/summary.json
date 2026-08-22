@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__scaffold__seed3__ERM__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 1262,
+  "val_n": 158,
+  "test_n": 158,
+  "val_metrics": {
+    "mae": 9.667362442499474,
+    "rmse": 15.578438017577776,
+    "spearman": 0.32559494594472266,
+    "r2": 0.0047803255343654705
+  },
+  "test_metrics": {
+    "mae": 10.629882679709905,
+    "rmse": 18.052859023151697,
+    "spearman": 0.43624953555452367,
+    "r2": 0.03923658935169594
+  },
+  "elapsed_seconds": 0.06537604331970215
+}

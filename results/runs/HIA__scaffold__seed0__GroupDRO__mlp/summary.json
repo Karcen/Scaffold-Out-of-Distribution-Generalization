@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__scaffold__seed0__GroupDRO__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 0,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 0,
+  "train_n": 461,
+  "val_n": 58,
+  "test_n": 58,
+  "val_metrics": {
+    "auroc": 0.4925,
+    "auprc": 0.8697256832316788,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9259259259259259,
+    "mcc": 0.0,
+    "brier": 0.22006945142726836,
+    "ece": 0.3178906255754931
+  },
+  "test_metrics": {
+    "auroc": 0.4789915966386555,
+    "auprc": 0.8444630709915286,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9357798165137615,
+    "mcc": 0.0,
+    "brier": 0.22092197797417207,
+    "ece": 0.336552737088039
+  },
+  "elapsed_seconds": 0.04860520362854004
+}

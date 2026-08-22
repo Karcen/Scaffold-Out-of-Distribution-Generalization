@@ -1,0 +1,151 @@
+{
+  "run_id": "Solubility__frontier__seed3__CVaR__mlp",
+  "task": {
+    "name": "Solubility",
+    "path": "Solubility_AqSolDB.tab",
+    "kind": "regression",
+    "primary_metric": "mae",
+    "tdc_task": "Solubility_AqSolDB",
+    "cmnpd_column": "AQUEOUS_SOLUBILITY"
+  },
+  "split": {
+    "kind": "frontier",
+    "seed": 3,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "neighbors": 10,
+    "label_free": true,
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 107
+  },
+  "seed": 3,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "objective": {
+    "method": "cvar",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 3
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.5844342112541199,
+      0.011790035292506218,
+      0.6583988070487976
+    ],
+    [
+      -0.6449182629585266,
+      0.008701848797500134,
+      0.580471932888031
+    ],
+    [
+      -0.5939759016036987,
+      0.033805593848228455,
+      0.7097346186637878
+    ],
+    [
+      -0.4885484576225281,
+      -0.0398268885910511,
+      0.578121542930603
+    ]
+  ],
+  "environment_centers": [
+    [
+      -1.029772162437439,
+      -0.273973286151886,
+      0.324286550283432,
+      1.1810870170593262
+    ],
+    [
+      -1.17886221408844,
+      -0.2948406934738159,
+      0.28349870443344116,
+      1.0731405019760132
+    ],
+    [
+      -1.0438385009765625,
+      -0.2737428843975067,
+      0.36628538370132446,
+      1.2066140174865723
+    ],
+    [
+      -0.8448770046234131,
+      -0.2536190450191498,
+      0.23212340474128723,
+      1.7752741575241089
+    ]
+  ],
+  "environment_counts": [
+    [
+      1691.0,
+      1691.0,
+      1691.0,
+      1691.0
+    ],
+    [
+      1691.0,
+      1691.0,
+      1691.0,
+      1691.0
+    ],
+    [
+      1691.0,
+      1691.0,
+      1691.0,
+      1691.0
+    ],
+    [
+      1690.0,
+      1694.0,
+      1689.0,
+      1691.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 6764,
+      "mean": -2.782820463180542,
+      "std": 2.0611562728881836,
+      "minimum": -12.949999809265137,
+      "maximum": 1.6302350759506226
+    },
+    "val": {
+      "n": 988,
+      "mean": -3.4588277339935303,
+      "std": 2.9785661697387695,
+      "minimum": -11.600000381469727,
+      "maximum": 1.5808000564575195
+    },
+    "test": {
+      "n": 1938,
+      "mean": -2.9877474308013916,
+      "std": 2.9523234367370605,
+      "minimum": -13.171899795532227,
+      "maximum": 2.137681722640991
+    }
+  }
+}

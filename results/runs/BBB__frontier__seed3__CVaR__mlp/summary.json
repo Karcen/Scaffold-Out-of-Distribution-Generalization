@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__frontier__seed3__CVaR__mlp",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 3,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 27,
+  "train_n": 1354,
+  "val_n": 198,
+  "test_n": 389,
+  "val_metrics": {
+    "auroc": 0.803054298642534,
+    "auprc": 0.8332907102710647,
+    "balanced_accuracy": 0.7447963800904978,
+    "f1": 0.8612099644128114,
+    "mcc": 0.5464163890622082,
+    "brier": 0.155669437661987,
+    "ece": 0.1067794625661477
+  },
+  "test_metrics": {
+    "auroc": 0.41888600624768363,
+    "auprc": 0.4335121770588839,
+    "balanced_accuracy": 0.5266188383544237,
+    "f1": 0.6272189349112426,
+    "mcc": 0.06963315100126286,
+    "brier": 0.40856990711824537,
+    "ece": 0.37375451893375705
+  },
+  "elapsed_seconds": 0.2886312007904053
+}

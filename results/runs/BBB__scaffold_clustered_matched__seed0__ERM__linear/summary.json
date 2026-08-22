@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__scaffold_clustered_matched__seed0__ERM__linear",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold_clustered_matched",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "linear",
+  "best_epoch": 29,
+  "train_n": 1359,
+  "val_n": 194,
+  "test_n": 388,
+  "val_metrics": {
+    "auroc": 0.7920195746282703,
+    "auprc": 0.9403583162539673,
+    "balanced_accuracy": 0.6029550159984942,
+    "f1": 0.9221902017291066,
+    "mcc": 0.38908630822106516,
+    "brier": 0.1187500439171163,
+    "ece": 0.09818668014456312
+  },
+  "test_metrics": {
+    "auroc": 0.8879861111111111,
+    "auprc": 0.9517300402273174,
+    "balanced_accuracy": 0.7397916666666666,
+    "f1": 0.9134615384615384,
+    "mcc": 0.6157281586000759,
+    "brier": 0.11532346448749799,
+    "ece": 0.1038762301437019
+  },
+  "elapsed_seconds": 0.24972105026245117
+}

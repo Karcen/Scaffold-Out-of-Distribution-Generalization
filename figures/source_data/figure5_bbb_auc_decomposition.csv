@@ -1,0 +1,4 @@
+comparison,auroc
+Overall,0.4091173823264679
+Within quintiles,0.5627898349100352
+Across quintiles,0.38353457060803503

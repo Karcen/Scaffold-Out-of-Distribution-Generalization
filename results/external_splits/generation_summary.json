@@ -1,0 +1,156 @@
+{
+  "completed": [
+    {
+      "tag": "DILI__lohi__seed0",
+      "seconds": 0.4,
+      "counts": {
+        "train": 358,
+        "test": 68,
+        "val": 48
+      }
+    },
+    {
+      "tag": "DILI__lohi__seed1",
+      "seconds": 0.1,
+      "counts": {
+        "train": 358,
+        "test": 68,
+        "val": 48
+      }
+    },
+    {
+      "tag": "DILI__lohi__seed2",
+      "seconds": 0.1,
+      "counts": {
+        "train": 358,
+        "test": 68,
+        "val": 48
+      }
+    },
+    {
+      "tag": "HIA__lohi__seed0",
+      "seconds": 0.1,
+      "counts": {
+        "train": 435,
+        "test": 83,
+        "val": 58
+      }
+    },
+    {
+      "tag": "HIA__lohi__seed1",
+      "seconds": 0.1,
+      "counts": {
+        "train": 435,
+        "test": 83,
+        "val": 58
+      }
+    },
+    {
+      "tag": "HIA__lohi__seed2",
+      "seconds": 0.1,
+      "counts": {
+        "train": 435,
+        "test": 83,
+        "val": 58
+      }
+    },
+    {
+      "tag": "BBB__lohi__seed0",
+      "seconds": 3.4,
+      "counts": {
+        "train": 1468,
+        "test": 278,
+        "val": 194
+      }
+    },
+    {
+      "tag": "BBB__lohi__seed1",
+      "seconds": 2.7,
+      "counts": {
+        "train": 1468,
+        "test": 278,
+        "val": 194
+      }
+    },
+    {
+      "tag": "BBB__lohi__seed2",
+      "seconds": 3.7,
+      "counts": {
+        "train": 1462,
+        "test": 277,
+        "val": 194
+      }
+    },
+    {
+      "tag": "Solubility__lohi__seed0",
+      "seconds": 240.2,
+      "counts": {
+        "train": 6981,
+        "test": 1326,
+        "val": 969
+      }
+    },
+    {
+      "tag": "Solubility__lohi__seed1",
+      "seconds": 224.0,
+      "counts": {
+        "train": 6943,
+        "test": 1319,
+        "val": 969
+      }
+    },
+    {
+      "tag": "Solubility__lohi__seed2",
+      "seconds": 295.9,
+      "counts": {
+        "train": 6957,
+        "test": 1321,
+        "val": 969
+      }
+    },
+    {
+      "tag": "CYP2D6__lohi__seed0",
+      "seconds": 437.4,
+      "counts": {
+        "train": 9738,
+        "test": 1838,
+        "val": 1289
+      }
+    },
+    {
+      "tag": "CYP2D6__lohi__seed1",
+      "seconds": 523.1,
+      "counts": {
+        "train": 9736,
+        "test": 1838,
+        "val": 1289
+      }
+    },
+    {
+      "tag": "CYP2D6__lohi__seed2",
+      "seconds": 493.9,
+      "counts": {
+        "train": 9738,
+        "test": 1838,
+        "val": 1289
+      }
+    }
+  ],
+  "failed": [
+    {
+      "tag": "PPBR__lohi__seed0",
+      "seconds": 1.2,
+      "error": "ValueError('No solution is found. Try to decrease train_min_frac and test_min_frac.')"
+    },
+    {
+      "tag": "PPBR__lohi__seed1",
+      "seconds": 1.1,
+      "error": "ValueError('No solution is found. Try to decrease train_min_frac and test_min_frac.')"
+    },
+    {
+      "tag": "PPBR__lohi__seed2",
+      "seconds": 1.1,
+      "error": "ValueError('No solution is found. Try to decrease train_min_frac and test_min_frac.')"
+    }
+  ]
+}

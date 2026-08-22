@@ -1,0 +1,145 @@
+{
+  "run_id": "DILI__scaffold_clustered_matched__seed3__ERM__gine3x128",
+  "task": {
+    "name": "DILI",
+    "path": "DILI.tab",
+    "kind": "binary",
+    "primary_metric": "auroc",
+    "tdc_task": "DILI",
+    "cmnpd_column": "HEPATOTOXICITY_MODEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 3,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 1
+  },
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 128,
+    "layers": 3,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 3
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.5917624831199646,
+      0.044842351227998734,
+      0.6886382699012756
+    ],
+    [
+      -0.6566369533538818,
+      -0.08066137880086899,
+      0.647367537021637
+    ],
+    [
+      -0.5149729251861572,
+      0.058453671634197235,
+      0.7441467046737671
+    ],
+    [
+      -0.5370792746543884,
+      -0.12650048732757568,
+      0.8114709258079529
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.993958055973053,
+      -0.26272156834602356,
+      0.3517076075077057,
+      1.6135791540145874
+    ],
+    [
+      -1.0842565298080444,
+      -0.36633065342903137,
+      0.3170671761035919,
+      1.189807415008545
+    ],
+    [
+      -1.1132336854934692,
+      -0.22632527351379395,
+      0.385897159576416,
+      1.339098334312439
+    ],
+    [
+      -0.7868391871452332,
+      -0.3292422890663147,
+      0.27158305048942566,
+      3.4512407779693604
+    ]
+  ],
+  "environment_counts": [
+    [
+      83.0,
+      84.0,
+      83.0,
+      83.0
+    ],
+    [
+      83.0,
+      84.0,
+      83.0,
+      83.0
+    ],
+    [
+      83.0,
+      84.0,
+      83.0,
+      83.0
+    ],
+    [
+      83.0,
+      84.0,
+      83.0,
+      83.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 333,
+      "positive_n": 149,
+      "positive_fraction": 0.44744744896888733
+    },
+    "val": {
+      "n": 47,
+      "positive_n": 26,
+      "positive_fraction": 0.5531914830207825
+    },
+    "test": {
+      "n": 95,
+      "positive_n": 61,
+      "positive_fraction": 0.6421052813529968
+    }
+  },
+  "representation": "learned categorical molecular graph; no pretrained weights"
+}

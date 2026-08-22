@@ -1,0 +1,153 @@
+{
+  "run_id": "PPBR__frontier__seed1__MV-FREX__gine3x128",
+  "task": {
+    "name": "PPBR",
+    "path": "PPBR_AZ.tab",
+    "kind": "regression",
+    "primary_metric": "mae",
+    "tdc_task": "PPBR_AZ",
+    "cmnpd_column": "PLASMA_PROTEIN_BINDING_MODEL"
+  },
+  "split": {
+    "kind": "frontier",
+    "seed": 1,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "neighbors": 10,
+    "label_free": true,
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 1
+  },
+  "seed": 1,
+  "method": "MV-FREX",
+  "architecture": "gine3x128",
+  "objective": {
+    "method": "mvfrex",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 128,
+    "layers": 3,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 1
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.3461187481880188,
+      -0.0744149461388588,
+      0.2594761550426483
+    ],
+    [
+      -0.6070528626441956,
+      -0.047693755477666855,
+      0.5126286745071411
+    ],
+    [
+      -0.25004029273986816,
+      -0.006821385584771633,
+      0.3036835193634033
+    ],
+    [
+      -0.4997183382511139,
+      0.0295410118997097,
+      0.6226995587348938
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.5611813068389893,
+      -0.204133540391922,
+      0.0704406201839447,
+      0.5657127499580383
+    ],
+    [
+      -1.0279923677444458,
+      -0.3178732693195343,
+      0.22621726989746094,
+      1.0160232782363892
+    ],
+    [
+      -0.4836727976799011,
+      -0.12115205824375153,
+      0.1335602104663849,
+      0.6226065754890442
+    ],
+    [
+      -0.9409324526786804,
+      -0.23307165503501892,
+      0.3075017035007477,
+      1.0663667917251587
+    ]
+  ],
+  "environment_counts": [
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ],
+    [
+      275.0,
+      277.0,
+      275.0,
+      276.0
+    ],
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ],
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 1103,
+      "mean": 90.96607971191406,
+      "std": 12.766368865966797,
+      "minimum": 23.190000534057617,
+      "maximum": 99.94999694824219
+    },
+    "val": {
+      "n": 159,
+      "mean": 86.16987609863281,
+      "std": 17.53276824951172,
+      "minimum": 14.229999542236328,
+      "maximum": 99.91999816894531
+    },
+    "test": {
+      "n": 316,
+      "mean": 78.92970275878906,
+      "std": 23.78519058227539,
+      "minimum": 11.180000305175781,
+      "maximum": 99.94999694824219
+    }
+  },
+  "representation": "learned categorical molecular graph; no pretrained weights"
+}

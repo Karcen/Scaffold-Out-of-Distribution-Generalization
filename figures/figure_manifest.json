@@ -1,0 +1,138 @@
+[
+  {
+    "artifact_id": "ood_generalization_curve",
+    "source_data": [
+      "results/strict_matched_split_effects.csv",
+      "results/statistical_summary.json",
+      "results/view_novelty_correlations.csv"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "Frontier shift dominates robust-objective effects.",
+    "supported_manuscript_claims": [
+      "Frontier shift dominates robust-objective effects."
+    ],
+    "limitations": "Normalized endpoint errors are comparable ratios, not common physical units.",
+    "exports": [
+      "figures/ood_generalization_curve.svg",
+      "figures/ood_generalization_curve.pdf",
+      "figures/ood_generalization_curve.tiff",
+      "figures/ood_generalization_curve.png"
+    ]
+  },
+  {
+    "artifact_id": "embedding_shift_pca",
+    "source_data": [
+      "results/cmnpd_shift_summary.csv",
+      "figures/source_data/figure2_physchem_pca_points.csv"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "CMNPD shift depends strongly on the molecular view.",
+    "supported_manuscript_claims": [
+      "CMNPD shift depends strongly on the molecular view."
+    ],
+    "limitations": "PCA is descriptive; quantitative claims use the four-view heatmaps.",
+    "exports": [
+      "figures/embedding_shift_pca.svg",
+      "figures/embedding_shift_pca.pdf",
+      "figures/embedding_shift_pca.tiff",
+      "figures/embedding_shift_pca.png"
+    ]
+  },
+  {
+    "artifact_id": "teacher_agreement_by_novelty",
+    "source_data": [
+      "results/cmnpd_teacher_agreement_by_novelty_seed.csv",
+      "results/cmnpd_teacher_coverage_by_novelty.csv",
+      "results/cmnpd_teacher_agreement_compound_bootstrap.csv"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "Teacher agreement changes heterogeneously with novelty.",
+    "supported_manuscript_claims": [
+      "Teacher agreement changes heterogeneously with novelty."
+    ],
+    "limitations": "CMNPD teacher agreement is not biological accuracy.",
+    "exports": [
+      "figures/teacher_agreement_by_novelty.svg",
+      "figures/teacher_agreement_by_novelty.pdf",
+      "figures/teacher_agreement_by_novelty.tiff",
+      "figures/teacher_agreement_by_novelty.png"
+    ]
+  },
+  {
+    "artifact_id": "method_ablation",
+    "source_data": [
+      "results/method_effects.csv",
+      "results/calibration_summary.csv",
+      "results/ablation_summary.csv"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "No tested robust objective wins consistently across endpoints.",
+    "supported_manuscript_claims": [
+      "No tested robust objective wins consistently across endpoints."
+    ],
+    "limitations": "Near-zero effects are not evidence of equivalence; intervals are reported elsewhere.",
+    "exports": [
+      "figures/method_ablation.svg",
+      "figures/method_ablation.pdf",
+      "figures/method_ablation.tiff",
+      "figures/method_ablation.png"
+    ]
+  },
+  {
+    "artifact_id": "bbb_sensitivity",
+    "source_data": [
+      "results/reviewer_priority1/leave_one_endpoint_out.csv",
+      "results/reviewer_priority1/bbb_frontier_quintiles.csv",
+      "results/reviewer_priority1/bbb_rank_reversal.json"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "BBB raises the skew-sensitive mean and its sub-chance AUROC is a cross-support-stratum rank reversal, not a pure prevalence effect.",
+    "supported_manuscript_claims": [
+      "BBB raises the skew-sensitive mean and its sub-chance AUROC is a cross-support-stratum rank reversal, not a pure prevalence effect."
+    ],
+    "limitations": "The outcome-standardized and stratum decompositions are descriptive, not causal identification.",
+    "exports": [
+      "figures/bbb_sensitivity.svg",
+      "figures/bbb_sensitivity.pdf",
+      "figures/bbb_sensitivity.tiff",
+      "figures/bbb_sensitivity.png"
+    ]
+  },
+  {
+    "artifact_id": "frontier_robustness",
+    "source_data": [
+      "results/gnn_primary_summary.csv",
+      "results/external_split_effects.csv"
+    ],
+    "transformation": {
+      "script": "scripts/make_figures.py",
+      "sha256": "3d9c7c7ac250bfab9f88848053f0d261460cdf057f52b7b19edf67a3ed9ed874"
+    },
+    "caption_claim": "The matched frontier gap persists under a graph encoder and exceeds two published hard splits on average, though no split is uniformly hardest.",
+    "supported_manuscript_claims": [
+      "The matched frontier gap persists under a graph encoder and exceeds two published hard splits on average, though no split is uniformly hardest."
+    ],
+    "limitations": "GNN covers four binary tasks; Lo-Hi is infeasible for PPBR and DataSAIL is limited to four tasks; realized ratios differ (Lo-Hi test fraction is smaller).",
+    "exports": [
+      "figures/frontier_robustness.svg",
+      "figures/frontier_robustness.pdf",
+      "figures/frontier_robustness.tiff",
+      "figures/frontier_robustness.png"
+    ]
+  }
+]

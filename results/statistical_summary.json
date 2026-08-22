@@ -1,0 +1,100 @@
+{
+  "frontier_vs_scaffold": {
+    "mean": 1.3104619669379958,
+    "ci95_low": 0.49921595169526656,
+    "ci95_high": 2.5913822987437705,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "frontier_vs_scaffold_matched": {
+    "mean": 1.111617433921835,
+    "ci95_low": 0.4934009468845813,
+    "ci95_high": 1.9299571868535081,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "frontier_vs_scaffold_clustered_matched": {
+    "mean": 1.3027734970191636,
+    "ci95_low": 0.5206630248827799,
+    "ci95_high": 2.459921540227132,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "frontier_vs_scaffold_clustered_matched_chance_adjusted": {
+    "mean": 1.2824521670107358,
+    "ci95_low": 0.48670094322449964,
+    "ci95_high": 2.4473931887684364,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "frontier_vs_scaffold_clustered_matched_task_median": {
+    "median": 0.8695350342336674,
+    "ci95_low": 0.4156376956334353,
+    "ci95_high": 2.5315609658959013,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "linear_frontier_vs_scaffold_clustered_matched": {
+    "mean": 1.1236363935480684,
+    "ci95_low": 0.366519343854343,
+    "ci95_high": 2.2912393121722854,
+    "task_n": 6,
+    "pair_n": 18
+  },
+  "cyp2d6_auroc_frontier_vs_scaffold_clustered_matched": {
+    "mean": 0.42583462597085014,
+    "ci95_low": 0.367769063678689,
+    "ci95_high": 0.4839001882630112,
+    "task_n": 1,
+    "pair_n": 5
+  },
+  "methods_vs_erm_frontier": {
+    "CVaR": {
+      "mean": -0.003422840902301332,
+      "ci95_low": -0.012140430598981953,
+      "ci95_high": 0.0021523426844565364,
+      "task_n": 6,
+      "pair_n": 30,
+      "wins": 17,
+      "ties": 0,
+      "losses": 13
+    },
+    "GroupDRO": {
+      "mean": 0.00012334879717086733,
+      "ci95_low": -0.0005981311465083533,
+      "ci95_high": 0.000889093553501946,
+      "task_n": 6,
+      "pair_n": 30,
+      "wins": 16,
+      "ties": 1,
+      "losses": 13
+    },
+    "MV-FREX": {
+      "mean": 0.001595087182674041,
+      "ci95_low": -0.004292179693807692,
+      "ci95_high": 0.008438895546983722,
+      "task_n": 6,
+      "pair_n": 30,
+      "wins": 16,
+      "ties": 0,
+      "losses": 14
+    },
+    "V-REx": {
+      "mean": -1.0094971192714798e-05,
+      "ci95_low": -0.0004895233499545607,
+      "ci95_high": 0.0006064129858659618,
+      "task_n": 6,
+      "pair_n": 30,
+      "wins": 12,
+      "ties": 5,
+      "losses": 13
+    }
+  },
+  "mvfrex_worst_view_bin_error_reduction": {
+    "mean": 0.0130201643792819,
+    "ci95_low": -0.008913770940941432,
+    "ci95_high": 0.04893264799932034,
+    "task_n": 6,
+    "pair_n": 30
+  }
+}

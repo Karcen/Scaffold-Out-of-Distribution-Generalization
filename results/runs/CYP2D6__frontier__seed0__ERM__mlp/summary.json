@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__frontier__seed0__ERM__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 12,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.8212812789620019,
+    "auprc": 0.569370214576005,
+    "balanced_accuracy": 0.7150312789620019,
+    "f1": 0.5550660792951542,
+    "mcc": 0.46425480275996234,
+    "brier": 0.11852016361136522,
+    "ece": 0.045574584389573736
+  },
+  "test_metrics": {
+    "auroc": 0.7103125929229855,
+    "auprc": 0.3773497397705307,
+    "balanced_accuracy": 0.6365636018011129,
+    "f1": 0.3795379537953795,
+    "mcc": 0.3002981223564959,
+    "brier": 0.11289451007123102,
+    "ece": 0.08326374903578787
+  },
+  "elapsed_seconds": 0.9686751365661621
+}

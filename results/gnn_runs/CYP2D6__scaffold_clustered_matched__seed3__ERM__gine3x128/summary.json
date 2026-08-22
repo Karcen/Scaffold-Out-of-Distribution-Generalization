@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__scaffold_clustered_matched__seed3__ERM__gine3x128",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "scaffold_clustered_matched",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 24,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.8216104778074218,
+    "auprc": 0.5987662177587363,
+    "balanced_accuracy": 0.6791704334149156,
+    "f1": 0.5055928411633109,
+    "mcc": 0.4174128431034054,
+    "brier": 0.12283360426330743,
+    "ece": 0.04512474178805293
+  },
+  "test_metrics": {
+    "auroc": 0.8285536922811472,
+    "auprc": 0.6151883751428081,
+    "balanced_accuracy": 0.7143459598369418,
+    "f1": 0.5579302587176603,
+    "mcc": 0.47267959287509,
+    "brier": 0.11347284923195126,
+    "ece": 0.04175939591106748
+  },
+  "elapsed_seconds": 88.07806372642517
+}

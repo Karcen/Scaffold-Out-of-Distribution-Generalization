@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__frontier__seed0__FREX-single-view__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "FREX-single-view",
+  "architecture": "mlp",
+  "best_epoch": 12,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.821153846153846,
+    "auprc": 0.5679994545223791,
+    "balanced_accuracy": 0.7074799196787149,
+    "f1": 0.5434298440979956,
+    "mcc": 0.45247383690539217,
+    "brier": 0.11860592770482263,
+    "ece": 0.047547414194013274
+  },
+  "test_metrics": {
+    "auroc": 0.7091271611231469,
+    "auprc": 0.3772157863222224,
+    "balanced_accuracy": 0.6325453464168896,
+    "f1": 0.37271214642262895,
+    "mcc": 0.29388077040208405,
+    "brier": 0.1127727370577658,
+    "ece": 0.08365440724415567
+  },
+  "elapsed_seconds": 1.0110440254211426
+}

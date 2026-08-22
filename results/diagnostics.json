@@ -1,0 +1,73 @@
+{
+  "dataset": {
+    "rows": 31561,
+    "columns": 23,
+    "sha256": "cdccc99060070c9ff8f56b40a206e79c05ef3c5d6c99fe3eb759422fc8a75c23",
+    "bytes": 14849412
+  },
+  "molecules": {
+    "valid_smiles": 31561,
+    "unique_raw_smiles": 31561,
+    "unique_canonical_isomeric": 31556,
+    "unique_connectivity": 27317,
+    "multi_fragment": 1204,
+    "nonzero_charge": 664,
+    "metal_containing": 1081
+  },
+  "scaffolds": {
+    "unique_including_acyclic": 9192,
+    "unique_nonempty": 9191,
+    "acyclic_molecules": 1977,
+    "singleton_scaffolds": 5065,
+    "largest_nonempty": 915,
+    "top_100_molecule_fraction": 0.2991983777446849
+  },
+  "label_semantics": {
+    "bbb_level4_exactly_missing_score": true,
+    "solubility_abs_gt_10": 477,
+    "solubility_abs_gt_100": 28,
+    "solubility_maximum": 1155.8
+  },
+  "duplicate_inchikey_conflicts": {
+    "BLOOD_BRAIN_BARRIER_PENETRATION": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 13
+    },
+    "BLOOD_BRAIN_BARRIER_PENETRATION_LEVEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 3
+    },
+    "HUMAN_INTESTINAL_ABSORPTION_LEVEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 4
+    },
+    "AQUEOUS_SOLUBILITY": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 21
+    },
+    "AQUEOUS_SOLUBILITY_LEVEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 4
+    },
+    "CYP2D6_BINDING_MODEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 1
+    },
+    "HEPATOTOXICITY_MODEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 3
+    },
+    "PLASMA_PROTEIN_BINDING_MODEL": {
+      "duplicate_groups": 35,
+      "conflicting_groups": 2
+    }
+  },
+  "environment": {
+    "python": "3.13.9",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5",
+    "rdkit": "2026.03.2",
+    "scikit_learn": "1.7.2",
+    "torch": "2.12.0"
+  }
+}

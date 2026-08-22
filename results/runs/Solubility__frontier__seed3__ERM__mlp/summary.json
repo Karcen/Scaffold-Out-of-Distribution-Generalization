@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed3__ERM__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 26,
+  "train_n": 6764,
+  "val_n": 988,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.199973844186646,
+    "rmse": 1.5872543153341103,
+    "spearman": 0.8554037145406413,
+    "r2": 0.7160260170058795
+  },
+  "test_metrics": {
+    "mae": 1.9062804636076094,
+    "rmse": 2.48183834047318,
+    "spearman": 0.6350193858586148,
+    "r2": 0.2933260168111942
+  },
+  "elapsed_seconds": 1.0520541667938232
+}

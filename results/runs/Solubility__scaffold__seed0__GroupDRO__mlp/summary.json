@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold__seed0__GroupDRO__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 0,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 15,
+  "train_n": 7752,
+  "val_n": 969,
+  "test_n": 969,
+  "val_metrics": {
+    "mae": 1.328377298477574,
+    "rmse": 1.745671336811297,
+    "spearman": 0.6595492167683691,
+    "r2": 0.40388198755418725
+  },
+  "test_metrics": {
+    "mae": 1.3710139466971505,
+    "rmse": 1.740565937095187,
+    "spearman": 0.6295140277771794,
+    "r2": 0.34993490635441393
+  },
+  "elapsed_seconds": 0.9011759757995605
+}

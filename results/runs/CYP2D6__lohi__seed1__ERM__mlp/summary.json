@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__lohi__seed1__ERM__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "lohi",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 9,
+  "train_n": 9736,
+  "val_n": 1289,
+  "test_n": 1838,
+  "val_metrics": {
+    "auroc": 0.8495055913127899,
+    "auprc": 0.6998404094640835,
+    "balanced_accuracy": 0.7386915249361763,
+    "f1": 0.6112266112266113,
+    "mcc": 0.5319569583892906,
+    "brier": 0.10918054081838229,
+    "ece": 0.041258678168198476
+  },
+  "test_metrics": {
+    "auroc": 0.7037838033653934,
+    "auprc": 0.23045443247312591,
+    "balanced_accuracy": 0.6331105435707947,
+    "f1": 0.3419354838709677,
+    "mcc": 0.28230587419874487,
+    "brier": 0.09279704175575168,
+    "ece": 0.0854091380637916
+  },
+  "elapsed_seconds": 1.2336819171905518
+}

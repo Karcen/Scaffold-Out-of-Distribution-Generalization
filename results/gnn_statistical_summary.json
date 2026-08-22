@@ -1,0 +1,16 @@
+{
+  "frontier_vs_scaffold_clustered_matched": {
+    "mean": 0.7652848618761973,
+    "ci95_low": 0.3655976090556538,
+    "ci95_high": 1.5069711261166747,
+    "task_n": 6,
+    "pair_n": 30
+  },
+  "mvfrex_vs_erm_frontier": {
+    "mean": -0.008209975550145715,
+    "ci95_low": -0.055169832914192786,
+    "ci95_high": 0.03123679578536227,
+    "task_n": 6,
+    "pair_n": 30
+  }
+}

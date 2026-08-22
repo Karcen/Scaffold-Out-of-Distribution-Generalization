@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__datasail__seed2__ERM__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "datasail",
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 0,
+  "train_n": 413,
+  "val_n": 55,
+  "test_n": 109,
+  "val_metrics": {
+    "auroc": 0.30952380952380953,
+    "auprc": 0.805242939700951,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9320388349514563,
+    "mcc": 0.0,
+    "brier": 0.22547421172156987,
+    "ece": 0.335194858637723
+  },
+  "test_metrics": {
+    "auroc": 0.3887931034482759,
+    "auprc": 0.6732991218891002,
+    "balanced_accuracy": 0.49375,
+    "f1": 0.8404255319148937,
+    "mcc": -0.05793514892948392,
+    "brier": 0.2382102384062362,
+    "ece": 0.20209273477213094
+  },
+  "elapsed_seconds": 0.08945798873901367
+}

@@ -1,0 +1,145 @@
+{
+  "run_id": "CYP2D6__scaffold_clustered_matched__seed1__ERM__gine3x128",
+  "task": {
+    "name": "CYP2D6",
+    "path": "CYP2D6_Veith.tab",
+    "kind": "binary",
+    "primary_metric": "auprc",
+    "tdc_task": "CYP2D6_Veith",
+    "cmnpd_column": "CYP2D6_BINDING_MODEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 1,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 11
+  },
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 128,
+    "layers": 3,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 1
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.5396820902824402,
+      0.030389264225959778,
+      0.6013596057891846
+    ],
+    [
+      -0.6685492992401123,
+      -0.017560698091983795,
+      0.5062642693519592
+    ],
+    [
+      -0.479911208152771,
+      0.04022638499736786,
+      0.5713419914245605
+    ],
+    [
+      -0.5404264330863953,
+      -0.03704681992530823,
+      0.7262505292892456
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.9922769069671631,
+      -0.2535347640514374,
+      0.30374786257743835,
+      1.094163417816162
+    ],
+    [
+      -1.3597851991653442,
+      -0.30554908514022827,
+      0.23489615321159363,
+      0.9621124267578125
+    ],
+    [
+      -1.0027046203613281,
+      -0.20546580851078033,
+      0.2997691035270691,
+      1.069913625717163
+    ],
+    [
+      -0.8592931628227234,
+      -0.295283704996109,
+      0.30013352632522583,
+      2.2560434341430664
+    ]
+  ],
+  "environment_counts": [
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 9021,
+      "positive_n": 1682,
+      "positive_fraction": 0.18645383417606354
+    },
+    "val": {
+      "n": 1289,
+      "positive_n": 275,
+      "positive_fraction": 0.21334367990493774
+    },
+    "test": {
+      "n": 2578,
+      "positive_n": 515,
+      "positive_fraction": 0.19976726174354553
+    }
+  },
+  "representation": "learned categorical molecular graph; no pretrained weights"
+}

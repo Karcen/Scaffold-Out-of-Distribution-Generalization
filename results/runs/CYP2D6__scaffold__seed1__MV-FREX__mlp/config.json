@@ -1,0 +1,141 @@
+{
+  "run_id": "CYP2D6__scaffold__seed1__MV-FREX__mlp",
+  "task": {
+    "name": "CYP2D6",
+    "path": "CYP2D6_Veith.tab",
+    "kind": "binary",
+    "primary_metric": "auprc",
+    "tdc_task": "CYP2D6_Veith",
+    "cmnpd_column": "CYP2D6_BINDING_MODEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 1,
+    "fractions": [
+      0.8,
+      0.1,
+      0.1
+    ]
+  },
+  "seed": 1,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "objective": {
+    "method": "mvfrex",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 1
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.538298487663269,
+      0.021419040858745575,
+      0.5974470973014832
+    ],
+    [
+      -0.6668142676353455,
+      -0.02242073230445385,
+      0.5142824053764343
+    ],
+    [
+      -0.4816575050354004,
+      0.046331632882356644,
+      0.5553346276283264
+    ],
+    [
+      -0.5515150427818298,
+      -0.03432603180408478,
+      0.7384200692176819
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.991884708404541,
+      -0.2523016631603241,
+      0.299532026052475,
+      1.0955381393432617
+    ],
+    [
+      -1.3816202878952026,
+      -0.30986523628234863,
+      0.23892049491405487,
+      0.9796925187110901
+    ],
+    [
+      -1.0155571699142456,
+      -0.20874831080436707,
+      0.29323330521583557,
+      1.0564606189727783
+    ],
+    [
+      -0.8721234798431396,
+      -0.3016803562641144,
+      0.30572304129600525,
+      2.319579601287842
+    ]
+  ],
+  "environment_counts": [
+    [
+      2578.0,
+      2577.0,
+      2577.0,
+      2578.0
+    ],
+    [
+      2578.0,
+      2577.0,
+      2577.0,
+      2578.0
+    ],
+    [
+      2578.0,
+      2577.0,
+      2577.0,
+      2578.0
+    ],
+    [
+      2578.0,
+      2577.0,
+      2577.0,
+      2578.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 10310,
+      "positive_n": 1968,
+      "positive_fraction": 0.1908826380968094
+    },
+    "val": {
+      "n": 1289,
+      "positive_n": 249,
+      "positive_fraction": 0.19317300617694855
+    },
+    "test": {
+      "n": 1289,
+      "positive_n": 255,
+      "positive_fraction": 0.1978277713060379
+    }
+  }
+}

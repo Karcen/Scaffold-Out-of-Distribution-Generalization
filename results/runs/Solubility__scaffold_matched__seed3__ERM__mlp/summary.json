@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold_matched__seed3__ERM__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold_matched",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 17,
+  "train_n": 6783,
+  "val_n": 969,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.4120081280064034,
+    "rmse": 1.8146178015798093,
+    "spearman": 0.5883352509090523,
+    "r2": 0.29174079408445963
+  },
+  "test_metrics": {
+    "mae": 1.4083694400498523,
+    "rmse": 1.8332958359813842,
+    "spearman": 0.6788081710477432,
+    "r2": 0.45222120162682566
+  },
+  "elapsed_seconds": 0.8304338455200195
+}

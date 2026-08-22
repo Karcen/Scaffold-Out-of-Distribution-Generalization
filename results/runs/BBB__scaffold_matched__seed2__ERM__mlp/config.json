@@ -1,0 +1,141 @@
+{
+  "run_id": "BBB__scaffold_matched__seed2__ERM__mlp",
+  "task": {
+    "name": "BBB",
+    "path": "BBB_Martins.tab",
+    "kind": "binary",
+    "primary_metric": "auroc",
+    "tdc_task": "BBB_Martins",
+    "cmnpd_column": "BLOOD_BRAIN_BARRIER_PENETRATION_LEVEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 2,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ]
+  },
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "mlp",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 2
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.41816744208335876,
+      0.036133214831352234,
+      0.5559032559394836
+    ],
+    [
+      -0.5379109978675842,
+      -0.006960770580917597,
+      0.48300477862358093
+    ],
+    [
+      -0.41440263390541077,
+      0.0757930651307106,
+      0.5586578845977783
+    ],
+    [
+      -0.4865809679031372,
+      -0.03797023743391037,
+      0.7971258163452148
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.8700761198997498,
+      -0.17728382349014282,
+      0.2908722162246704,
+      1.1094720363616943
+    ],
+    [
+      -1.2361197471618652,
+      -0.2586858570575714,
+      0.23015180230140686,
+      1.0036786794662476
+    ],
+    [
+      -1.1321402788162231,
+      -0.15876483917236328,
+      0.28889569640159607,
+      1.0517029762268066
+    ],
+    [
+      -0.743147611618042,
+      -0.2762731909751892,
+      0.35417571663856506,
+      2.5285305976867676
+    ]
+  ],
+  "environment_counts": [
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 1359,
+      "positive_n": 1036,
+      "positive_fraction": 0.7623252272605896
+    },
+    "val": {
+      "n": 194,
+      "positive_n": 143,
+      "positive_fraction": 0.7371134161949158
+    },
+    "test": {
+      "n": 388,
+      "positive_n": 303,
+      "positive_fraction": 0.780927836894989
+    }
+  }
+}

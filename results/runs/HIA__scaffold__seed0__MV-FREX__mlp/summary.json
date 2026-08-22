@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__scaffold__seed0__MV-FREX__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 0,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 0,
+  "train_n": 461,
+  "val_n": 58,
+  "test_n": 58,
+  "val_metrics": {
+    "auroc": 0.5,
+    "auprc": 0.8696412111455507,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9259259259259259,
+    "mcc": 0.0,
+    "brier": 0.2201014171997328,
+    "ece": 0.31804673014015983
+  },
+  "test_metrics": {
+    "auroc": 0.48179271708683474,
+    "auprc": 0.844828110624403,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9357798165137615,
+    "mcc": 0.0,
+    "brier": 0.22093626059202925,
+    "ece": 0.33662709285473
+  },
+  "elapsed_seconds": 0.05584597587585449
+}

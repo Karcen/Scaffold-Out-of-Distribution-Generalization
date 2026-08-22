@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__frontier__seed1__ERM__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 4,
+  "train_n": 402,
+  "val_n": 59,
+  "test_n": 116,
+  "val_metrics": {
+    "auroc": 0.5359848484848485,
+    "auprc": 0.8604566296802654,
+    "balanced_accuracy": 0.5,
+    "f1": 0.897196261682243,
+    "mcc": 0.0,
+    "brier": 0.15915076818955684,
+    "ece": 0.07929641210426719
+  },
+  "test_metrics": {
+    "auroc": 0.5120715350223547,
+    "auprc": 0.5625033301498883,
+    "balanced_accuracy": 0.5,
+    "f1": 0.6892655367231638,
+    "mcc": 0.0,
+    "brier": 0.3065317671912556,
+    "ece": 0.24301364606824416
+  },
+  "elapsed_seconds": 0.19181108474731445
+}

@@ -1,0 +1,143 @@
+{
+  "run_id": "BBB__scaffold_clustered_matched__seed3__ERM__mlp",
+  "task": {
+    "name": "BBB",
+    "path": "BBB_Martins.tab",
+    "kind": "binary",
+    "primary_metric": "auroc",
+    "tdc_task": "BBB_Martins",
+    "cmnpd_column": "BLOOD_BRAIN_BARRIER_PENETRATION_LEVEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 3,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 4
+  },
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 3
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.3990246653556824,
+      0.08580203354358673,
+      0.5802878737449646
+    ],
+    [
+      -0.5643636584281921,
+      0.021537991240620613,
+      0.517379641532898
+    ],
+    [
+      -0.43020808696746826,
+      0.045530132949352264,
+      0.5361682772636414
+    ],
+    [
+      -0.482269823551178,
+      -0.014319419860839844,
+      0.8373245000839233
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.8576091527938843,
+      -0.1581694483757019,
+      0.31581035256385803,
+      1.0598100423812866
+    ],
+    [
+      -1.2551696300506592,
+      -0.2586400508880615,
+      0.2605683207511902,
+      1.0641555786132812
+    ],
+    [
+      -1.216741681098938,
+      -0.17412306368350983,
+      0.2761438190937042,
+      0.9983327984809875
+    ],
+    [
+      -0.7356691956520081,
+      -0.27465733885765076,
+      0.3642530143260956,
+      2.6298484802246094
+    ]
+  ],
+  "environment_counts": [
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ],
+    [
+      340.0,
+      340.0,
+      339.0,
+      340.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 1359,
+      "positive_n": 1036,
+      "positive_fraction": 0.7623252272605896
+    },
+    "val": {
+      "n": 194,
+      "positive_n": 144,
+      "positive_fraction": 0.7422680258750916
+    },
+    "test": {
+      "n": 388,
+      "positive_n": 302,
+      "positive_fraction": 0.7783505320549011
+    }
+  }
+}

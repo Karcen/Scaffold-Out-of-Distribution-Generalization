@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__scaffold__seed1__CVaR__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 1,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 3,
+  "train_n": 380,
+  "val_n": 48,
+  "test_n": 47,
+  "val_metrics": {
+    "auroc": 0.7267552182163188,
+    "auprc": 0.7857902635741737,
+    "balanced_accuracy": 0.6783681214421253,
+    "f1": 0.7457627118644068,
+    "mcc": 0.3460656772467967,
+    "brier": 0.23580620697766785,
+    "ece": 0.15449378577371436
+  },
+  "test_metrics": {
+    "auroc": 0.7851851851851852,
+    "auprc": 0.8447921878695395,
+    "balanced_accuracy": 0.7203703703703703,
+    "f1": 0.7547169811320755,
+    "mcc": 0.43831239862046506,
+    "brier": 0.2319948866847235,
+    "ece": 0.19313998869124882
+  },
+  "elapsed_seconds": 0.05721330642700195
+}

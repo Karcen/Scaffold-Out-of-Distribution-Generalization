@@ -1,0 +1,151 @@
+{
+  "run_id": "Solubility__scaffold_clustered_matched__seed3__ERM__gine3x128",
+  "task": {
+    "name": "Solubility",
+    "path": "Solubility_AqSolDB.tab",
+    "kind": "regression",
+    "primary_metric": "mae",
+    "tdc_task": "Solubility_AqSolDB",
+    "cmnpd_column": "AQUEOUS_SOLUBILITY"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 3,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 107
+  },
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 128,
+    "layers": 3,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 3
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.6301335096359253,
+      -0.0014129051705822349,
+      0.6432176828384399
+    ],
+    [
+      -0.6491038799285889,
+      0.008838273584842682,
+      0.6081551909446716
+    ],
+    [
+      -0.6060663461685181,
+      -0.006435951218008995,
+      0.6933838725090027
+    ],
+    [
+      -0.4831980764865875,
+      -0.041384194046258926,
+      0.7581737637519836
+    ]
+  ],
+  "environment_centers": [
+    [
+      -1.1396403312683105,
+      -0.3059406578540802,
+      0.31128183007240295,
+      1.2528187036514282
+    ],
+    [
+      -1.1567959785461426,
+      -0.31127864122390747,
+      0.3074771761894226,
+      1.118090271949768
+    ],
+    [
+      -1.1370248794555664,
+      -0.31002330780029297,
+      0.33269110321998596,
+      1.3191611766815186
+    ],
+    [
+      -0.8231761455535889,
+      -0.2630990445613861,
+      0.2923508584499359,
+      2.7838330268859863
+    ]
+  ],
+  "environment_counts": [
+    [
+      1696.0,
+      1696.0,
+      1695.0,
+      1696.0
+    ],
+    [
+      1696.0,
+      1696.0,
+      1695.0,
+      1696.0
+    ],
+    [
+      1696.0,
+      1696.0,
+      1695.0,
+      1696.0
+    ],
+    [
+      1695.0,
+      1697.0,
+      1695.0,
+      1696.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 6783,
+      "mean": -2.7755074501037598,
+      "std": 2.3739328384399414,
+      "minimum": -12.949999809265137,
+      "maximum": 1.9082998037338257
+    },
+    "val": {
+      "n": 969,
+      "mean": -3.4637179374694824,
+      "std": 2.2168397903442383,
+      "minimum": -13.171899795532227,
+      "maximum": 1.243394374847412
+    },
+    "test": {
+      "n": 1938,
+      "mean": -3.0175249576568604,
+      "std": 2.4234256744384766,
+      "minimum": -11.998937606811523,
+      "maximum": 2.137681722640991
+    }
+  },
+  "representation": "learned categorical molecular graph; no pretrained weights"
+}

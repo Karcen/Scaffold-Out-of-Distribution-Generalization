@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__frontier__seed0__FREX-single-view__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "FREX-single-view",
+  "architecture": "mlp",
+  "best_epoch": 27,
+  "train_n": 402,
+  "val_n": 59,
+  "test_n": 116,
+  "val_metrics": {
+    "auroc": 0.5473484848484849,
+    "auprc": 0.8767270073641594,
+    "balanced_accuracy": 0.5,
+    "f1": 0.897196261682243,
+    "mcc": 0.0,
+    "brier": 0.18411354202384125,
+    "ece": 0.176151058431399
+  },
+  "test_metrics": {
+    "auroc": 0.543070044709389,
+    "auprc": 0.587003500807382,
+    "balanced_accuracy": 0.5,
+    "f1": 0.6892655367231638,
+    "mcc": 0.0,
+    "brier": 0.4477096627776881,
+    "ece": 0.44187955815216595
+  },
+  "elapsed_seconds": 0.15262889862060547
+}

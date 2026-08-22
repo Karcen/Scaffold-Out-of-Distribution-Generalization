@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__scaffold__seed4__V-REx__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "scaffold",
+  "seed": 4,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 16,
+  "train_n": 10310,
+  "val_n": 1289,
+  "test_n": 1289,
+  "val_metrics": {
+    "auroc": 0.8065686251367152,
+    "auprc": 0.5586914706492354,
+    "balanced_accuracy": 0.6836901698809495,
+    "f1": 0.503562945368171,
+    "mcc": 0.41650273722683656,
+    "brier": 0.11977326742527304,
+    "ece": 0.04902115114019348
+  },
+  "test_metrics": {
+    "auroc": 0.7961508221379004,
+    "auprc": 0.5973576910260295,
+    "balanced_accuracy": 0.6698338631935186,
+    "f1": 0.4989339019189765,
+    "mcc": 0.41608098611556393,
+    "brier": 0.13817608517944455,
+    "ece": 0.06750239961378564
+  },
+  "elapsed_seconds": 1.3040859699249268
+}

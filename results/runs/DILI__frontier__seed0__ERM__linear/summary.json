@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__frontier__seed0__ERM__linear",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "linear",
+  "best_epoch": 29,
+  "train_n": 317,
+  "val_n": 50,
+  "test_n": 108,
+  "val_metrics": {
+    "auroc": 0.8285256410256411,
+    "auprc": 0.8263335954372137,
+    "balanced_accuracy": 0.7243589743589745,
+    "f1": 0.7407407407407407,
+    "mcc": 0.4576043153224294,
+    "brier": 0.19354814234856335,
+    "ece": 0.14880980879068373
+  },
+  "test_metrics": {
+    "auroc": 0.5816761363636362,
+    "auprc": 0.6003601432941622,
+    "balanced_accuracy": 0.5333806818181819,
+    "f1": 0.5094339622641509,
+    "mcc": 0.06633867048589406,
+    "brier": 0.24951903813423423,
+    "ece": 0.16749374320109686
+  },
+  "elapsed_seconds": 0.0951223373413086
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__scaffold__seed3__ERM__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 3,
+  "train_n": 380,
+  "val_n": 48,
+  "test_n": 47,
+  "val_metrics": {
+    "auroc": 0.7848324514991182,
+    "auprc": 0.8411002004080868,
+    "balanced_accuracy": 0.6825396825396826,
+    "f1": 0.7741935483870968,
+    "mcc": 0.40754269936454207,
+    "brier": 0.22852498563774296,
+    "ece": 0.16717940941452983
+  },
+  "test_metrics": {
+    "auroc": 0.6758241758241759,
+    "auprc": 0.6646919904754667,
+    "balanced_accuracy": 0.6089743589743589,
+    "f1": 0.7301587301587301,
+    "mcc": 0.26475841836855746,
+    "brier": 0.2375449812218428,
+    "ece": 0.09508830879596951
+  },
+  "elapsed_seconds": 0.0525050163269043
+}

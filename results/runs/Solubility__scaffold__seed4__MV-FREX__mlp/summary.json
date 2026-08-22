@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold__seed4__MV-FREX__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 4,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 24,
+  "train_n": 7752,
+  "val_n": 969,
+  "test_n": 969,
+  "val_metrics": {
+    "mae": 1.2836983517224163,
+    "rmse": 1.6899749503878778,
+    "spearman": 0.6557826629531092,
+    "r2": 0.3902762455145531
+  },
+  "test_metrics": {
+    "mae": 1.3877847850100706,
+    "rmse": 1.8163443414876392,
+    "spearman": 0.5972067360485949,
+    "r2": 0.30349165297397174
+  },
+  "elapsed_seconds": 1.481194019317627
+}

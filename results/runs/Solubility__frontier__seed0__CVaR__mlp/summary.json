@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed0__CVaR__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 0,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 20,
+  "train_n": 6766,
+  "val_n": 986,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.2172325632502334,
+    "rmse": 1.5997187873026248,
+    "spearman": 0.8541062242532674,
+    "r2": 0.7121074810115315
+  },
+  "test_metrics": {
+    "mae": 1.9377794668109778,
+    "rmse": 2.492886742103774,
+    "spearman": 0.6261421814989547,
+    "r2": 0.28702020998242084
+  },
+  "elapsed_seconds": 1.0404059886932373
+}

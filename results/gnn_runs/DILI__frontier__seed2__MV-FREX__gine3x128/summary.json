@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "run_id": "DILI__frontier__seed2__MV-FREX__gine3x128",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 2,
+  "method": "MV-FREX",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 5,
+  "train_n": 319,
+  "val_n": 48,
+  "test_n": 108,
+  "val_metrics": {
+    "auroc": 0.8164335664335665,
+    "auprc": 0.825364434525033,
+    "balanced_accuracy": 0.7832167832167831,
+    "f1": 0.75,
+    "mcc": 0.5829752480681661,
+    "brier": 0.2249992998911662,
+    "ece": 0.2564519289880991
+  },
+  "test_metrics": {
+    "auroc": 0.7425426136363636,
+    "auprc": 0.652361852120624,
+    "balanced_accuracy": 0.5930397727272727,
+    "f1": 0.40625,
+    "mcc": 0.23537407584207823,
+    "brier": 0.22982310756971153,
+    "ece": 0.10175340953800412
+  },
+  "elapsed_seconds": 1.2176539897918701
+}

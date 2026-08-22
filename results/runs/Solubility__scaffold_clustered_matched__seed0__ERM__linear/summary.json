@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold_clustered_matched__seed0__ERM__linear",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold_clustered_matched",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "linear",
+  "best_epoch": 23,
+  "train_n": 6783,
+  "val_n": 969,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.442442886211301,
+    "rmse": 1.8630383146092289,
+    "spearman": 0.5890407635015336,
+    "r2": 0.3298722126132001
+  },
+  "test_metrics": {
+    "mae": 1.3800340535796043,
+    "rmse": 1.7553527147120285,
+    "spearman": 0.6678090609261824,
+    "r2": 0.451228529218505
+  },
+  "elapsed_seconds": 0.773608922958374
+}

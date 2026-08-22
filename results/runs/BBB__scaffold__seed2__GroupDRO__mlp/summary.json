@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__scaffold__seed2__GroupDRO__mlp",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 2,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 28,
+  "train_n": 1553,
+  "val_n": 194,
+  "test_n": 194,
+  "val_metrics": {
+    "auroc": 0.8452096285668739,
+    "auprc": 0.9466476612536803,
+    "balanced_accuracy": 0.7445400924597482,
+    "f1": 0.9073482428115016,
+    "mcc": 0.5251921929953592,
+    "brier": 0.11317258914343395,
+    "ece": 0.09222772747059779
+  },
+  "test_metrics": {
+    "auroc": 0.8728918140682845,
+    "auprc": 0.9498799374044371,
+    "balanced_accuracy": 0.7045111750994104,
+    "f1": 0.8896103896103896,
+    "mcc": 0.5049625560351078,
+    "brier": 0.13254740310939137,
+    "ece": 0.11597217731033788
+  },
+  "elapsed_seconds": 0.2935140132904053
+}

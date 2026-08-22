@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold_clustered_matched__seed1__ERM__gine3x128",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold_clustered_matched",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 2,
+  "train_n": 6783,
+  "val_n": 969,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.4332942348598312,
+    "rmse": 1.88654689668643,
+    "spearman": 0.5898458757153802,
+    "r2": 0.21563610618499773
+  },
+  "test_metrics": {
+    "mae": 1.481322555063423,
+    "rmse": 1.9917530944064519,
+    "spearman": 0.6658218358070265,
+    "r2": 0.3133336761078218
+  },
+  "elapsed_seconds": 12.976401090621948
+}

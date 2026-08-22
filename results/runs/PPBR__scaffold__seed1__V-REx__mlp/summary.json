@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__scaffold__seed1__V-REx__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 1,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 4,
+  "train_n": 1262,
+  "val_n": 158,
+  "test_n": 158,
+  "val_metrics": {
+    "mae": 10.632442426077928,
+    "rmse": 16.340398189719984,
+    "spearman": 0.4945613154490898,
+    "r2": 0.09394907924339768
+  },
+  "test_metrics": {
+    "mae": 10.704157587848131,
+    "rmse": 16.713577259019242,
+    "spearman": 0.30848303659611054,
+    "r2": 0.0557519287292908
+  },
+  "elapsed_seconds": 0.10126280784606934
+}

@@ -1,0 +1,7 @@
+task,tdc_name,kind,raw_rows,harmonized_rows,positive_fraction_or_median,primary_metric
+BBB,BBB_Martins,binary,2039,1941,0.7635239567233385,auroc
+HIA,HIA_Hou,binary,578,577,0.8648180242634316,auroc
+CYP2D6,CYP2D6_Veith,binary,13130,12888,0.19180633147113593,auprc
+PPBR,PPBR_AZ,regression,2828,1578,95.43,mae
+Solubility,Solubility_AqSolDB,regression,9982,9690,-2.60675,mae
+DILI,DILI,binary,475,475,0.4968421052631579,auroc

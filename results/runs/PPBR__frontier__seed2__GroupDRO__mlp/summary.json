@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed2__GroupDRO__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 2,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 10,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 11.79724754477447,
+    "rmse": 17.806636198491013,
+    "spearman": 0.32822178652579315,
+    "r2": -0.031484728356614866
+  },
+  "test_metrics": {
+    "mae": 17.811772820315785,
+    "rmse": 26.641816709027598,
+    "spearman": 0.2687782240615265,
+    "r2": -0.25462638017948414
+  },
+  "elapsed_seconds": 0.1919240951538086
+}

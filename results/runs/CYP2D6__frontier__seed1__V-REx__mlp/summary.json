@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__frontier__seed1__V-REx__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "frontier",
+  "seed": 1,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 12,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.8238183503243744,
+    "auprc": 0.5719180305490177,
+    "balanced_accuracy": 0.721055375347544,
+    "f1": 0.5645514223194749,
+    "mcc": 0.4744636050888911,
+    "brier": 0.11756008905715841,
+    "ece": 0.04764468292651526
+  },
+  "test_metrics": {
+    "auroc": 0.7150529926511194,
+    "auprc": 0.3902769566637826,
+    "balanced_accuracy": 0.6373826515441146,
+    "f1": 0.380327868852459,
+    "mcc": 0.3001461755007094,
+    "brier": 0.11288877965196956,
+    "ece": 0.08354221193039146
+  },
+  "elapsed_seconds": 0.970736026763916
+}

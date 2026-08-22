@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "run_id": "HIA__frontier__seed3__ERM__gine3x128",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 25,
+  "train_n": 402,
+  "val_n": 59,
+  "test_n": 116,
+  "val_metrics": {
+    "auroc": 0.47727272727272724,
+    "auprc": 0.8412394041763027,
+    "balanced_accuracy": 0.5,
+    "f1": 0.897196261682243,
+    "mcc": 0.0,
+    "brier": 0.1737535041669525,
+    "ece": 0.14822080377805025
+  },
+  "test_metrics": {
+    "auroc": 0.553204172876304,
+    "auprc": 0.619900597791747,
+    "balanced_accuracy": 0.5,
+    "f1": 0.6892655367231638,
+    "mcc": 0.0,
+    "brier": 0.4314025019151653,
+    "ece": 0.4273791873249514
+  },
+  "elapsed_seconds": 3.5803048610687256
+}

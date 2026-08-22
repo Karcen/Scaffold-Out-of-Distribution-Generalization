@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__frontier__seed3__GroupDRO__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 3,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 11,
+  "train_n": 316,
+  "val_n": 51,
+  "test_n": 108,
+  "val_metrics": {
+    "auroc": 0.8415384615384616,
+    "auprc": 0.8099669407002665,
+    "balanced_accuracy": 0.7661538461538462,
+    "f1": 0.7777777777777778,
+    "mcc": 0.5372904002475901,
+    "brier": 0.1825500766156307,
+    "ece": 0.1405000157800375
+  },
+  "test_metrics": {
+    "auroc": 0.5745738636363636,
+    "auprc": 0.5901632412528954,
+    "balanced_accuracy": 0.4900568181818182,
+    "f1": 0.49122807017543857,
+    "mcc": -0.02046118977677837,
+    "brier": 0.26005347249352134,
+    "ece": 0.19846133611820357
+  },
+  "elapsed_seconds": 0.08446621894836426
+}

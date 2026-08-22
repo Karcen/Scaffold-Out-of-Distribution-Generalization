@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed0__MV-FREX__gine3x128",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 0,
+  "method": "MV-FREX",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 3,
+  "train_n": 6766,
+  "val_n": 986,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.5809227337342409,
+    "rmse": 2.020820339321762,
+    "spearman": 0.8668219119112123,
+    "r2": 0.5405920589082487
+  },
+  "test_metrics": {
+    "mae": 2.1671986294380137,
+    "rmse": 2.934670407357698,
+    "spearman": 0.6150278779623048,
+    "r2": 0.011923001883710427
+  },
+  "elapsed_seconds": 15.300174713134766
+}

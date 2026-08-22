@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__frontier__seed0__ERM__linear",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "linear",
+  "best_epoch": 29,
+  "train_n": 1354,
+  "val_n": 198,
+  "test_n": 389,
+  "val_metrics": {
+    "auroc": 0.6333710407239819,
+    "auprc": 0.7633308630951416,
+    "balanced_accuracy": 0.5294117647058824,
+    "f1": 0.8024691358024691,
+    "mcc": 0.1985392379034054,
+    "brier": 0.23454251903444426,
+    "ece": 0.1551196438194526
+  },
+  "test_metrics": {
+    "auroc": 0.28490496108434377,
+    "auprc": 0.3724715014470418,
+    "balanced_accuracy": 0.5119791390903796,
+    "f1": 0.6525573192239859,
+    "mcc": 0.07962309193980546,
+    "brier": 0.42726802206455855,
+    "ece": 0.42269682010832055
+  },
+  "elapsed_seconds": 0.21076083183288574
+}

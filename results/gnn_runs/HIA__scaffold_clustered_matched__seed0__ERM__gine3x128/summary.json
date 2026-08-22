@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "run_id": "HIA__scaffold_clustered_matched__seed0__ERM__gine3x128",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold_clustered_matched",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 11,
+  "train_n": 404,
+  "val_n": 58,
+  "test_n": 115,
+  "val_metrics": {
+    "auroc": 0.7282913165266106,
+    "auprc": 0.9597891282675193,
+    "balanced_accuracy": 0.5,
+    "f1": 0.9357798165137615,
+    "mcc": 0.0,
+    "brier": 0.10435593875932313,
+    "ece": 0.026490109747853777
+  },
+  "test_metrics": {
+    "auroc": 0.668693009118541,
+    "auprc": 0.9040467259269298,
+    "balanced_accuracy": 0.5,
+    "f1": 0.8995215311004785,
+    "mcc": 0.0,
+    "brier": 0.14797007909925314,
+    "ece": 0.06555382013320918
+  },
+  "elapsed_seconds": 2.2143168449401855
+}

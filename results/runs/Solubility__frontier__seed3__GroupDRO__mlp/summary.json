@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed3__GroupDRO__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 3,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 26,
+  "train_n": 6764,
+  "val_n": 988,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.2028935651626222,
+    "rmse": 1.588702267127377,
+    "spearman": 0.855399913327396,
+    "r2": 0.7155076776559752
+  },
+  "test_metrics": {
+    "mae": 1.9076350022576989,
+    "rmse": 2.4823850641240646,
+    "spearman": 0.635263020360931,
+    "r2": 0.29301463638899194
+  },
+  "elapsed_seconds": 1.1739461421966553
+}

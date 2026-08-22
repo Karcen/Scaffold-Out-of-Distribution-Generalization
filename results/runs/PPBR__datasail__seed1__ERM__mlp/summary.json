@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__datasail__seed1__ERM__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "datasail",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 1128,
+  "val_n": 150,
+  "test_n": 300,
+  "val_metrics": {
+    "mae": 8.395803858439127,
+    "rmse": 13.770545372775256,
+    "spearman": 0.4432636855912472,
+    "r2": -0.06233164921333301
+  },
+  "test_metrics": {
+    "mae": 10.116808325449625,
+    "rmse": 17.429460214387518,
+    "spearman": 0.38393095871284766,
+    "r2": -0.030822509860602088
+  },
+  "elapsed_seconds": 0.13771867752075195
+}

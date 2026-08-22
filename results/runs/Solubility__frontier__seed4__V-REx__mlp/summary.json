@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed4__V-REx__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 4,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 23,
+  "train_n": 6766,
+  "val_n": 986,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.2023206267335393,
+    "rmse": 1.5758419401693933,
+    "spearman": 0.8589040577574832,
+    "r2": 0.720637313265211
+  },
+  "test_metrics": {
+    "mae": 1.9000415255184528,
+    "rmse": 2.4637297158223874,
+    "spearman": 0.6323994968317475,
+    "r2": 0.30360082618649
+  },
+  "elapsed_seconds": 1.1546759605407715
+}

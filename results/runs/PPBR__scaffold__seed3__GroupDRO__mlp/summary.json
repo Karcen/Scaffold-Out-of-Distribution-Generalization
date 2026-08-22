@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__scaffold__seed3__GroupDRO__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 3,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 1262,
+  "val_n": 158,
+  "test_n": 158,
+  "val_metrics": {
+    "mae": 9.678437715844263,
+    "rmse": 15.573193774499217,
+    "spearman": 0.3246532561658681,
+    "r2": 0.0054502637407519705
+  },
+  "test_metrics": {
+    "mae": 10.6466757496701,
+    "rmse": 18.047723418529216,
+    "spearman": 0.4345821208783862,
+    "r2": 0.039783139811090495
+  },
+  "elapsed_seconds": 0.07564902305603027
+}

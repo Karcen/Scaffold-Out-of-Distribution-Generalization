@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__frontier__seed3__V-REx__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 3,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 24,
+  "train_n": 402,
+  "val_n": 59,
+  "test_n": 116,
+  "val_metrics": {
+    "auroc": 0.5473484848484848,
+    "auprc": 0.8817766942467262,
+    "balanced_accuracy": 0.5,
+    "f1": 0.897196261682243,
+    "mcc": 0.0,
+    "brier": 0.18328999984730268,
+    "ece": 0.1761575816041333
+  },
+  "test_metrics": {
+    "auroc": 0.5397913561847988,
+    "auprc": 0.5843143607842194,
+    "balanced_accuracy": 0.5,
+    "f1": 0.6892655367231638,
+    "mcc": 0.0,
+    "brier": 0.4439540782173962,
+    "ece": 0.43739047132689374
+  },
+  "elapsed_seconds": 0.14511418342590332
+}

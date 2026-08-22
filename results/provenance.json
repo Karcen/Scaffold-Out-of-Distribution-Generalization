@@ -1,0 +1,70 @@
+{
+  "CMNPD_1.0_calc_prop.csv": {
+    "sha256": "cdccc99060070c9ff8f56b40a206e79c05ef3c5d6c99fe3eb759422fc8a75c23",
+    "source": "https://docs.cmnpd.org/downloads",
+    "admet_documentation": "https://docs.cmnpd.org/frequently-asked-questions/parameter-questions",
+    "terms": "https://docs.cmnpd.org/terms-and-conditions",
+    "retrieved": "2026-07-11",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  "data/external/BBB_Martins.tab": {
+    "sha256": "eb32676c7bf6e2bcd98b7625186bbb2ba4e4644c1d1468dfa18b6be665bd5e98",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 4259566,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "BBB_Martins"
+  },
+  "data/external/HIA_Hou.tab": {
+    "sha256": "9040c5985fd366acf736bca1587902af28450976410fe99db82027e5d9c713b4",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 4259591,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "HIA_Hou"
+  },
+  "data/external/CYP2D6_Veith.tab": {
+    "sha256": "1b50a2f02a6d9c02d29fd9e3684d661f64bfe8afb1fea09e5ffb3d54174c411b",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 4259580,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "CYP2D6_Veith"
+  },
+  "data/external/PPBR_AZ.tab": {
+    "sha256": "54c9520f4b6e04419b18bab7335583c3865d86fc53db40f74c2cff1577c8ec1b",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 6413140,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "PPBR_AZ"
+  },
+  "data/external/Solubility_AqSolDB.tab": {
+    "sha256": "0b593f7b55abbe477ba4284aefd7b5450551f4ed21ac4aed80a097931141c9a4",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 4259610,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "Solubility_AqSolDB"
+  },
+  "data/external/DILI.tab": {
+    "sha256": "d3961647ff6df9711b6aa4b9fe59d6cbeb40f9d23dd6e9d51d6656e6e6df5ed8",
+    "source": "Harvard Dataverse via TDC metadata v1.1.15",
+    "dataset_doi": "10.7910/DVN/21LKWG",
+    "dataverse_version": "105.0",
+    "dataverse_file_id": 4259585,
+    "retrieved": "2026-07-11",
+    "license": "CC0 1.0",
+    "tdc_name": "DILI"
+  }
+}

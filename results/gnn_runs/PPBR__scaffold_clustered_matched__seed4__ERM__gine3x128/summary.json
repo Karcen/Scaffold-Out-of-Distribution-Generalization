@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__scaffold_clustered_matched__seed4__ERM__gine3x128",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold_clustered_matched",
+  "seed": 4,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 3,
+  "train_n": 1104,
+  "val_n": 158,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 11.4767766300636,
+    "rmse": 18.736809075246324,
+    "spearman": 0.4020366919498524,
+    "r2": -0.0945923927772272
+  },
+  "test_metrics": {
+    "mae": 12.344511164894588,
+    "rmse": 20.063583248792774,
+    "spearman": 0.22916077395278756,
+    "r2": -0.12280082196931241
+  },
+  "elapsed_seconds": 4.103878974914551
+}

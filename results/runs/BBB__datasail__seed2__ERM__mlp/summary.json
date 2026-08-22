@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__datasail__seed2__ERM__mlp",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "datasail",
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 10,
+  "train_n": 1387,
+  "val_n": 184,
+  "test_n": 370,
+  "val_metrics": {
+    "auroc": 0.7134011499336578,
+    "auprc": 0.853855310389785,
+    "balanced_accuracy": 0.6924664602683178,
+    "f1": 0.8561151079136691,
+    "mcc": 0.42157966912785894,
+    "brier": 0.17486297156587452,
+    "ece": 0.142723575639336
+  },
+  "test_metrics": {
+    "auroc": 0.6060779451967703,
+    "auprc": 0.9026604406364113,
+    "balanced_accuracy": 0.5511793502447708,
+    "f1": 0.9180327868852459,
+    "mcc": 0.1534356578914907,
+    "brier": 0.13014491447974288,
+    "ece": 0.10425142814984197
+  },
+  "elapsed_seconds": 0.3093559741973877
+}

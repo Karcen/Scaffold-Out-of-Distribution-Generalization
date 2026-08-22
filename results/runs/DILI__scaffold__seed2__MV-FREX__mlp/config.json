@@ -1,0 +1,141 @@
+{
+  "run_id": "DILI__scaffold__seed2__MV-FREX__mlp",
+  "task": {
+    "name": "DILI",
+    "path": "DILI.tab",
+    "kind": "binary",
+    "primary_metric": "auroc",
+    "tdc_task": "DILI",
+    "cmnpd_column": "HEPATOTOXICITY_MODEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 2,
+    "fractions": [
+      0.8,
+      0.1,
+      0.1
+    ]
+  },
+  "seed": 2,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "objective": {
+    "method": "mvfrex",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 2
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.5324105024337769,
+      0.024578871205449104,
+      0.6814228892326355
+    ],
+    [
+      -0.7284771800041199,
+      -0.07192472368478775,
+      0.649155855178833
+    ],
+    [
+      -0.6006810665130615,
+      0.00024076703994069248,
+      0.6815074682235718
+    ],
+    [
+      -0.549116313457489,
+      -0.10373243689537048,
+      0.8337156772613525
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.9589574933052063,
+      -0.2785891890525818,
+      0.3425329327583313,
+      1.6763134002685547
+    ],
+    [
+      -1.1387381553649902,
+      -0.3723529279232025,
+      0.29309049248695374,
+      1.1411452293395996
+    ],
+    [
+      -1.1140152215957642,
+      -0.2817469537258148,
+      0.3371518552303314,
+      1.2700914144515991
+    ],
+    [
+      -0.802428126335144,
+      -0.3230358362197876,
+      0.26171866059303284,
+      3.3532896041870117
+    ]
+  ],
+  "environment_counts": [
+    [
+      95.0,
+      95.0,
+      95.0,
+      95.0
+    ],
+    [
+      95.0,
+      95.0,
+      95.0,
+      95.0
+    ],
+    [
+      95.0,
+      95.0,
+      95.0,
+      95.0
+    ],
+    [
+      95.0,
+      95.0,
+      95.0,
+      95.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 380,
+      "positive_n": 185,
+      "positive_fraction": 0.4868420958518982
+    },
+    "val": {
+      "n": 48,
+      "positive_n": 25,
+      "positive_fraction": 0.5208333134651184
+    },
+    "test": {
+      "n": 47,
+      "positive_n": 26,
+      "positive_fraction": 0.5531914830207825
+    }
+  }
+}

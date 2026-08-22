@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__frontier__seed1__MV-FREX__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 1,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 25,
+  "train_n": 6764,
+  "val_n": 988,
+  "test_n": 1938,
+  "val_metrics": {
+    "mae": 1.1823620051737056,
+    "rmse": 1.5630117338883724,
+    "spearman": 0.8591788169970251,
+    "r2": 0.7246342024837584
+  },
+  "test_metrics": {
+    "mae": 1.9237623602321627,
+    "rmse": 2.4878556151783755,
+    "spearman": 0.624977695427111,
+    "r2": 0.28989516778635604
+  },
+  "elapsed_seconds": 1.4147305488586426
+}

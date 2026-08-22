@@ -1,0 +1,151 @@
+{
+  "run_id": "PPBR__frontier__seed4__GroupDRO__mlp",
+  "task": {
+    "name": "PPBR",
+    "path": "PPBR_AZ.tab",
+    "kind": "regression",
+    "primary_metric": "mae",
+    "tdc_task": "PPBR_AZ",
+    "cmnpd_column": "PLASMA_PROTEIN_BINDING_MODEL"
+  },
+  "split": {
+    "kind": "frontier",
+    "seed": 4,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "neighbors": 10,
+    "label_free": true,
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 1
+  },
+  "seed": 4,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "objective": {
+    "method": "groupdro",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 4
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.3342139422893524,
+      -0.0691143050789833,
+      0.2614706754684448
+    ],
+    [
+      -0.5965166687965393,
+      -0.05363009124994278,
+      0.5088541507720947
+    ],
+    [
+      -0.244350403547287,
+      0.002420784905552864,
+      0.2901608347892761
+    ],
+    [
+      -0.4997183382511139,
+      0.0295410118997097,
+      0.6226995587348938
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.558427631855011,
+      -0.20003679394721985,
+      0.07697129994630814,
+      0.5706948041915894
+    ],
+    [
+      -1.024094820022583,
+      -0.318491131067276,
+      0.22867818176746368,
+      1.017844796180725
+    ],
+    [
+      -0.47958898544311523,
+      -0.12022891640663147,
+      0.13626661896705627,
+      0.6284965872764587
+    ],
+    [
+      -0.9409324526786804,
+      -0.23307165503501892,
+      0.3075017035007477,
+      1.0663667917251587
+    ]
+  ],
+  "environment_counts": [
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ],
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ],
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ],
+    [
+      276.0,
+      276.0,
+      275.0,
+      276.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 1103,
+      "mean": 90.96607971191406,
+      "std": 12.766368865966797,
+      "minimum": 23.190000534057617,
+      "maximum": 99.94999694824219
+    },
+    "val": {
+      "n": 159,
+      "mean": 86.16987609863281,
+      "std": 17.53276824951172,
+      "minimum": 14.229999542236328,
+      "maximum": 99.91999816894531
+    },
+    "test": {
+      "n": 316,
+      "mean": 78.92970275878906,
+      "std": 23.78519058227539,
+      "minimum": 11.180000305175781,
+      "maximum": 99.94999694824219
+    }
+  }
+}

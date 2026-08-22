@@ -1,0 +1,145 @@
+{
+  "run_id": "CYP2D6__frontier__seed2__V-REx__mlp",
+  "task": {
+    "name": "CYP2D6",
+    "path": "CYP2D6_Veith.tab",
+    "kind": "binary",
+    "primary_metric": "auprc",
+    "tdc_task": "CYP2D6_Veith",
+    "cmnpd_column": "CYP2D6_BINDING_MODEL"
+  },
+  "split": {
+    "kind": "frontier",
+    "seed": 2,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "neighbors": 10,
+    "label_free": true,
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 11
+  },
+  "seed": 2,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "objective": {
+    "method": "vrex",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 2
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.5963724255561829,
+      -0.02161562442779541,
+      0.5596818327903748
+    ],
+    [
+      -0.7924360036849976,
+      -0.037871554493904114,
+      0.5278986096382141
+    ],
+    [
+      -0.517693817615509,
+      -0.011516893282532692,
+      0.5101953744888306
+    ],
+    [
+      -0.5297268629074097,
+      -0.0004714787064585835,
+      0.6111064553260803
+    ]
+  ],
+  "environment_centers": [
+    [
+      -1.0444570779800415,
+      -0.29624366760253906,
+      0.256130576133728,
+      1.1052838563919067
+    ],
+    [
+      -1.5263586044311523,
+      -0.3739492893218994,
+      0.24191996455192566,
+      1.0259252786636353
+    ],
+    [
+      -0.9483944177627563,
+      -0.2578873038291931,
+      0.2377811074256897,
+      0.9856845736503601
+    ],
+    [
+      -0.9184450507164001,
+      -0.2634938657283783,
+      0.2830757200717926,
+      1.416948914527893
+    ]
+  ],
+  "environment_counts": [
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ],
+    [
+      2255.0,
+      2256.0,
+      2255.0,
+      2255.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 9021,
+      "positive_n": 1887,
+      "positive_fraction": 0.20917858183383942
+    },
+    "val": {
+      "n": 1289,
+      "positive_n": 249,
+      "positive_fraction": 0.19317300617694855
+    },
+    "test": {
+      "n": 2578,
+      "positive_n": 336,
+      "positive_fraction": 0.13033358752727509
+    }
+  }
+}

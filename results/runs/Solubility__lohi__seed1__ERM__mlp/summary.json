@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__lohi__seed1__ERM__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "lohi",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 28,
+  "train_n": 6943,
+  "val_n": 969,
+  "test_n": 1319,
+  "val_metrics": {
+    "mae": 0.9776360127806732,
+    "rmse": 1.3117114235989915,
+    "spearman": 0.8114621322033767,
+    "r2": 0.6898749667721329
+  },
+  "test_metrics": {
+    "mae": 1.536431207395723,
+    "rmse": 2.0244696965812827,
+    "spearman": 0.689240328328593,
+    "r2": 0.36950826678561244
+  },
+  "elapsed_seconds": 1.1142871379852295
+}

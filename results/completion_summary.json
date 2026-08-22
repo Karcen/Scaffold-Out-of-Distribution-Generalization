@@ -1,0 +1,9 @@
+{
+  "complete_runs": 468,
+  "failed_runs": 0,
+  "metric_rows": 5616,
+  "split_manifests": 120,
+  "elapsed_seconds_sum": 217.30031776428223,
+  "elapsed_seconds_mean": 0.46431691829974836,
+  "elapsed_seconds_max": 2.0624208450317383
+}

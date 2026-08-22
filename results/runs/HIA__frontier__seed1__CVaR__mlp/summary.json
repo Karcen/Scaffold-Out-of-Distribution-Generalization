@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__frontier__seed1__CVaR__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 1,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 0,
+  "train_n": 402,
+  "val_n": 59,
+  "test_n": 116,
+  "val_metrics": {
+    "auroc": 0.5340909090909091,
+    "auprc": 0.8519792794024134,
+    "balanced_accuracy": 0.5,
+    "f1": 0.897196261682243,
+    "mcc": 0.0,
+    "brier": 0.21922766825269993,
+    "ece": 0.26085879641064147
+  },
+  "test_metrics": {
+    "auroc": 0.49597615499254843,
+    "auprc": 0.5651060358031845,
+    "balanced_accuracy": 0.5,
+    "f1": 0.6892655367231638,
+    "mcc": 0.0,
+    "brier": 0.2509266716671781,
+    "ece": 0.04666751057937228
+  },
+  "elapsed_seconds": 0.04033088684082031
+}

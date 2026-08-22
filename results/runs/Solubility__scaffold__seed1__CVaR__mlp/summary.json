@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold__seed1__CVaR__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 1,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 7752,
+  "val_n": 969,
+  "test_n": 969,
+  "val_metrics": {
+    "mae": 1.414156631481285,
+    "rmse": 1.7977560417164793,
+    "spearman": 0.5758600286104785,
+    "r2": 0.33123733829708
+  },
+  "test_metrics": {
+    "mae": 1.3881928274639612,
+    "rmse": 1.7438054381097605,
+    "spearman": 0.6089853795351985,
+    "r2": 0.3655614631402684
+  },
+  "elapsed_seconds": 0.3298459053039551
+}

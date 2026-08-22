@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__frontier__seed0__FREX-single-view__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "FREX-single-view",
+  "architecture": "mlp",
+  "best_epoch": 15,
+  "train_n": 317,
+  "val_n": 50,
+  "test_n": 108,
+  "val_metrics": {
+    "auroc": 0.8461538461538461,
+    "auprc": 0.7971246374913156,
+    "balanced_accuracy": 0.703525641025641,
+    "f1": 0.7169811320754716,
+    "mcc": 0.4120337353690155,
+    "brier": 0.17472201897272144,
+    "ece": 0.12452161997556686
+  },
+  "test_metrics": {
+    "auroc": 0.5948153409090909,
+    "auprc": 0.6132541459338507,
+    "balanced_accuracy": 0.5475852272727273,
+    "f1": 0.543859649122807,
+    "mcc": 0.09792140821743935,
+    "brier": 0.2746991218734615,
+    "ece": 0.22395472932193014
+  },
+  "elapsed_seconds": 0.10413432121276855
+}

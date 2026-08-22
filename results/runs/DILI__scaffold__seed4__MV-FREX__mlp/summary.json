@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__scaffold__seed4__MV-FREX__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 4,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 9,
+  "train_n": 380,
+  "val_n": 48,
+  "test_n": 47,
+  "val_metrics": {
+    "auroc": 0.6991304347826087,
+    "auprc": 0.7663059002331982,
+    "balanced_accuracy": 0.6043478260869566,
+    "f1": 0.6122448979591837,
+    "mcc": 0.20851441405707477,
+    "brier": 0.22349895792191599,
+    "ece": 0.06633201769242685
+  },
+  "test_metrics": {
+    "auroc": 0.7729166666666667,
+    "auprc": 0.8494252377266778,
+    "balanced_accuracy": 0.690625,
+    "f1": 0.7936507936507936,
+    "mcc": 0.3750503998389481,
+    "brier": 0.20214629581420587,
+    "ece": 0.22081523531294883
+  },
+  "elapsed_seconds": 0.09201574325561523
+}

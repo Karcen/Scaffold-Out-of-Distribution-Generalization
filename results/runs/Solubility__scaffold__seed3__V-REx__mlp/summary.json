@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "Solubility__scaffold__seed3__V-REx__mlp",
+  "task": "Solubility",
+  "tdc_name": "Solubility_AqSolDB",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 3,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 26,
+  "train_n": 7752,
+  "val_n": 969,
+  "test_n": 969,
+  "val_metrics": {
+    "mae": 1.33923079942231,
+    "rmse": 1.730898160680068,
+    "spearman": 0.6526749003108061,
+    "r2": 0.39719329898370015
+  },
+  "test_metrics": {
+    "mae": 1.3200724924685312,
+    "rmse": 1.737330142568072,
+    "spearman": 0.634418766194499,
+    "r2": 0.36643528645628565
+  },
+  "elapsed_seconds": 1.1744749546051025
+}

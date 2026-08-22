@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed3__ERM__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 3,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 11,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 11.636032680295548,
+    "rmse": 17.719179755633874,
+    "spearman": 0.3466218635738799,
+    "r2": -0.021377434291137476
+  },
+  "test_metrics": {
+    "mae": 17.80602508556994,
+    "rmse": 26.809564058953,
+    "spearman": 0.2761540583698412,
+    "r2": -0.27047536097218794
+  },
+  "elapsed_seconds": 0.22876691818237305
+}

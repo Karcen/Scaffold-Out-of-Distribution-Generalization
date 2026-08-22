@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__datasail__seed2__ERM__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "datasail",
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 340,
+  "val_n": 45,
+  "test_n": 90,
+  "val_metrics": {
+    "auroc": 0.7695852534562212,
+    "auprc": 0.6069146790575363,
+    "balanced_accuracy": 0.650921658986175,
+    "f1": 0.55,
+    "mcc": 0.2829195485650985,
+    "brier": 0.2470666961341077,
+    "ece": 0.19637116061316598
+  },
+  "test_metrics": {
+    "auroc": 0.6924603174603174,
+    "auprc": 0.6780468018025132,
+    "balanced_accuracy": 0.5684523809523809,
+    "f1": 0.6942148760330579,
+    "mcc": 0.17449296706910222,
+    "brier": 0.24409709048326078,
+    "ece": 0.06880541808075374
+  },
+  "elapsed_seconds": 0.08438920974731445
+}

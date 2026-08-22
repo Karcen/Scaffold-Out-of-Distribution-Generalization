@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed0__MV-FREX__gine3x128",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 0,
+  "method": "MV-FREX",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 22,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 12.189262726022013,
+    "rmse": 19.09937984254174,
+    "spearman": 0.12994849157171817,
+    "r2": -0.186690764703364
+  },
+  "test_metrics": {
+    "mae": 18.003248290170596,
+    "rmse": 27.49380513859272,
+    "spearman": 0.09899266582598469,
+    "r2": -0.33615377585770956
+  },
+  "elapsed_seconds": 12.97536587715149
+}

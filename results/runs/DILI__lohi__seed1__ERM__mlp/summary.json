@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__lohi__seed1__ERM__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "lohi",
+  "seed": 1,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 5,
+  "train_n": 358,
+  "val_n": 48,
+  "test_n": 68,
+  "val_metrics": {
+    "auroc": 0.8500881834215167,
+    "auprc": 0.9070702982914082,
+    "balanced_accuracy": 0.6296296296296297,
+    "f1": 0.7575757575757576,
+    "mcc": 0.32951276778634797,
+    "brier": 0.21531020637166898,
+    "ece": 0.1577604953199625
+  },
+  "test_metrics": {
+    "auroc": 0.8044982698961938,
+    "auprc": 0.8235740063156106,
+    "balanced_accuracy": 0.6764705882352942,
+    "f1": 0.7317073170731707,
+    "mcc": 0.38729833462074165,
+    "brier": 0.22337176403931527,
+    "ece": 0.11385950051686337
+  },
+  "elapsed_seconds": 0.13357901573181152
+}

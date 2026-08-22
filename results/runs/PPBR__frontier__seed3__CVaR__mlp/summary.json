@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed3__CVaR__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 3,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 11,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 11.643322206893057,
+    "rmse": 17.629992950837355,
+    "spearman": 0.3521660698173161,
+    "r2": -0.011121413558182969
+  },
+  "test_metrics": {
+    "mae": 17.794991363452958,
+    "rmse": 26.706737917645484,
+    "spearman": 0.26786701217141734,
+    "r2": -0.26074841783630065
+  },
+  "elapsed_seconds": 0.13459014892578125
+}

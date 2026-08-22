@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "DILI__frontier__seed4__CVaR__mlp",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "frontier",
+  "seed": 4,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 9,
+  "train_n": 316,
+  "val_n": 51,
+  "test_n": 108,
+  "val_metrics": {
+    "auroc": 0.8492307692307692,
+    "auprc": 0.8101161947075919,
+    "balanced_accuracy": 0.7853846153846153,
+    "f1": 0.7924528301886793,
+    "mcc": 0.5734219293243853,
+    "brier": 0.18634679157057937,
+    "ece": 0.1630927043802598
+  },
+  "test_metrics": {
+    "auroc": 0.5603693181818181,
+    "auprc": 0.5952377480750689,
+    "balanced_accuracy": 0.5177556818181819,
+    "f1": 0.5,
+    "mcc": 0.03551136363636364,
+    "brier": 0.2549874254660689,
+    "ece": 0.1967525109648704
+  },
+  "elapsed_seconds": 0.0760049819946289
+}

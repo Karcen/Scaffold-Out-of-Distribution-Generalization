@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "run_id": "DILI__scaffold_clustered_matched__seed2__ERM__gine3x128",
+  "task": "DILI",
+  "tdc_name": "DILI",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold_clustered_matched",
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 6,
+  "train_n": 333,
+  "val_n": 47,
+  "test_n": 95,
+  "val_metrics": {
+    "auroc": 0.8113553113553114,
+    "auprc": 0.8059405237146452,
+    "balanced_accuracy": 0.6978021978021978,
+    "f1": 0.6511627906976745,
+    "mcc": 0.40932883719799373,
+    "brier": 0.2022372338112878,
+    "ece": 0.18283322929067813
+  },
+  "test_metrics": {
+    "auroc": 0.7907692307692308,
+    "auprc": 0.8978970879311259,
+    "balanced_accuracy": 0.6846153846153846,
+    "f1": 0.6851851851851852,
+    "mcc": 0.34480955429429,
+    "brier": 0.21643581660183678,
+    "ece": 0.2064250502931444
+  },
+  "elapsed_seconds": 1.5676848888397217
+}

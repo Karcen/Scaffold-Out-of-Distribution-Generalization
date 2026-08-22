@@ -1,0 +1,143 @@
+{
+  "run_id": "HIA__scaffold_clustered_matched__seed4__ERM__mlp",
+  "task": {
+    "name": "HIA",
+    "path": "HIA_Hou.tab",
+    "kind": "binary",
+    "primary_metric": "auroc",
+    "tdc_task": "HIA_Hou",
+    "cmnpd_column": "HUMAN_INTESTINAL_ABSORPTION_LEVEL"
+  },
+  "split": {
+    "kind": "scaffold",
+    "seed": 4,
+    "fractions": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "acyclic_policy": "physchem_deterministic_lloyd_max50",
+    "acyclic_clusters": 1
+  },
+  "seed": 4,
+  "method": "ERM",
+  "architecture": "mlp",
+  "objective": {
+    "method": "erm",
+    "tail_alpha": 0.4,
+    "lambda_tail": 0.5,
+    "lambda_slope": 0.2,
+    "lambda_vrex": 1.0,
+    "temperature": 0.1,
+    "confidence_delta": 0.05,
+    "loss_cap": 5.0
+  },
+  "training": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 30,
+    "patience": 6,
+    "gradient_clip": 5.0,
+    "seed": 4
+  },
+  "views": [
+    "ecfp",
+    "maccs",
+    "atompair",
+    "physchem"
+  ],
+  "environment_thresholds": [
+    [
+      -0.500682532787323,
+      0.0599147267639637,
+      0.6979166865348816
+    ],
+    [
+      -0.6014391183853149,
+      -0.008995034731924534,
+      0.5935204029083252
+    ],
+    [
+      -0.5624437928199768,
+      -0.03162272274494171,
+      0.5964977741241455
+    ],
+    [
+      -0.5830406546592712,
+      -0.047762174159288406,
+      0.7633347511291504
+    ]
+  ],
+  "environment_centers": [
+    [
+      -0.9255605936050415,
+      -0.20540809631347656,
+      0.33732566237449646,
+      1.2908977270126343
+    ],
+    [
+      -1.1671260595321655,
+      -0.275014191865921,
+      0.33088380098342896,
+      1.0845645666122437
+    ],
+    [
+      -1.0568220615386963,
+      -0.2884959876537323,
+      0.27116137742996216,
+      1.3737921714782715
+    ],
+    [
+      -0.8324811458587646,
+      -0.33256667852401733,
+      0.2815873622894287,
+      3.337083101272583
+    ]
+  ],
+  "environment_counts": [
+    [
+      101.0,
+      101.0,
+      101.0,
+      101.0
+    ],
+    [
+      101.0,
+      101.0,
+      101.0,
+      101.0
+    ],
+    [
+      101.0,
+      101.0,
+      101.0,
+      101.0
+    ],
+    [
+      101.0,
+      101.0,
+      101.0,
+      101.0
+    ]
+  ],
+  "label_distribution": {
+    "train": {
+      "n": 404,
+      "positive_n": 352,
+      "positive_fraction": 0.8712871074676514
+    },
+    "val": {
+      "n": 58,
+      "positive_n": 52,
+      "positive_fraction": 0.8965517282485962
+    },
+    "test": {
+      "n": 115,
+      "positive_n": 95,
+      "positive_fraction": 0.8260869383811951
+    }
+  }
+}

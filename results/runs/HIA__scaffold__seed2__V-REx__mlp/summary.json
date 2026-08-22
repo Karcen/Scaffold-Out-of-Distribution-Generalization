@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "HIA__scaffold__seed2__V-REx__mlp",
+  "task": "HIA",
+  "tdc_name": "HIA_Hou",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 2,
+  "method": "V-REx",
+  "architecture": "mlp",
+  "best_epoch": 28,
+  "train_n": 461,
+  "val_n": 58,
+  "test_n": 58,
+  "val_metrics": {
+    "auroc": 0.8991596638655462,
+    "auprc": 0.9835876518215166,
+    "balanced_accuracy": 0.6428571428571428,
+    "f1": 0.9532710280373832,
+    "mcc": 0.5101020306102035,
+    "brier": 0.0651013727321144,
+    "ece": 0.04150756294357374
+  },
+  "test_metrics": {
+    "auroc": 0.7478991596638656,
+    "auprc": 0.9430660797900847,
+    "balanced_accuracy": 0.623249299719888,
+    "f1": 0.9333333333333333,
+    "mcc": 0.3168995981810581,
+    "brier": 0.09039799274407143,
+    "ece": 0.04812471465817806
+  },
+  "elapsed_seconds": 0.15188097953796387
+}

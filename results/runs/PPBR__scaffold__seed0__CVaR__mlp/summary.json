@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__scaffold__seed0__CVaR__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "scaffold",
+  "seed": 0,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 1,
+  "train_n": 1262,
+  "val_n": 158,
+  "test_n": 158,
+  "val_metrics": {
+    "mae": 10.468243152280397,
+    "rmse": 15.223639439125224,
+    "spearman": 0.4176843628479698,
+    "r2": 0.0370273903742806
+  },
+  "test_metrics": {
+    "mae": 9.208492689494845,
+    "rmse": 14.952401389216991,
+    "spearman": 0.4861066955459125,
+    "r2": 0.08254367817402197
+  },
+  "elapsed_seconds": 0.061929941177368164
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__frontier__seed0__GroupDRO__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "frontier",
+  "seed": 0,
+  "method": "GroupDRO",
+  "architecture": "mlp",
+  "best_epoch": 12,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.8214087117701575,
+    "auprc": 0.5690481130134482,
+    "balanced_accuracy": 0.7119767531665122,
+    "f1": 0.5511111111111111,
+    "mcc": 0.46134104845858387,
+    "brier": 0.11852219557990852,
+    "ece": 0.04497273055102708
+  },
+  "test_metrics": {
+    "auroc": 0.7101878106282656,
+    "auprc": 0.37836443544257653,
+    "balanced_accuracy": 0.6363405866360817,
+    "f1": 0.37891268533772654,
+    "mcc": 0.299318909366063,
+    "brier": 0.11292639467219145,
+    "ece": 0.08413495702575455
+  },
+  "elapsed_seconds": 1.0335559844970703
+}

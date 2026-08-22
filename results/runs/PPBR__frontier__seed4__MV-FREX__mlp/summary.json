@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed4__MV-FREX__mlp",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 4,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 6,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 11.604918281987029,
+    "rmse": 17.96577901707983,
+    "spearman": 0.36273797843767547,
+    "r2": -0.05000444507455093
+  },
+  "test_metrics": {
+    "mae": 17.99454018134105,
+    "rmse": 27.290736472633792,
+    "spearman": 0.2976631846114309,
+    "r2": -0.3164890593137619
+  },
+  "elapsed_seconds": 0.15510821342468262
+}

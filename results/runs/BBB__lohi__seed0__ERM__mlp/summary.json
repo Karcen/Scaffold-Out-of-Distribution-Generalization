@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__lohi__seed0__ERM__mlp",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "lohi",
+  "seed": 0,
+  "method": "ERM",
+  "architecture": "mlp",
+  "best_epoch": 20,
+  "train_n": 1468,
+  "val_n": 194,
+  "test_n": 278,
+  "val_metrics": {
+    "auroc": 0.8893671289654073,
+    "auprc": 0.9651172166570536,
+    "balanced_accuracy": 0.7543440140283756,
+    "f1": 0.9177215189873418,
+    "mcc": 0.5667799927379559,
+    "brier": 0.09649370903532706,
+    "ece": 0.04805750663742695
+  },
+  "test_metrics": {
+    "auroc": 0.7178571428571427,
+    "auprc": 0.8870098659742895,
+    "balanced_accuracy": 0.5912464985994398,
+    "f1": 0.8688172043010752,
+    "mcc": 0.2847582396022293,
+    "brier": 0.17652120395134258,
+    "ece": 0.12019266606234819
+  },
+  "elapsed_seconds": 0.3575749397277832
+}

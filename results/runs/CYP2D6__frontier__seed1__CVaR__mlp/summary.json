@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "CYP2D6__frontier__seed1__CVaR__mlp",
+  "task": "CYP2D6",
+  "tdc_name": "CYP2D6_Veith",
+  "kind": "binary",
+  "primary_metric": "auprc",
+  "split": "frontier",
+  "seed": 1,
+  "method": "CVaR",
+  "architecture": "mlp",
+  "best_epoch": 14,
+  "train_n": 9021,
+  "val_n": 1289,
+  "test_n": 2578,
+  "val_metrics": {
+    "auroc": 0.8259615384615385,
+    "auprc": 0.5729198841644161,
+    "balanced_accuracy": 0.729597235094223,
+    "f1": 0.5661914460285132,
+    "mcc": 0.46422868130032013,
+    "brier": 0.12005924432669744,
+    "ece": 0.06150831296581798
+  },
+  "test_metrics": {
+    "auroc": 0.7190234590714073,
+    "auprc": 0.3871978488376213,
+    "balanced_accuracy": 0.6431199821587867,
+    "f1": 0.3812405446293495,
+    "mcc": 0.2903323541374926,
+    "brier": 0.1180755427235281,
+    "ece": 0.09684812774639202
+  },
+  "elapsed_seconds": 1.1166558265686035
+}

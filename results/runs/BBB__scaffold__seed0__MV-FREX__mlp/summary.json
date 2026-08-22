@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "BBB__scaffold__seed0__MV-FREX__mlp",
+  "task": "BBB",
+  "tdc_name": "BBB_Martins",
+  "kind": "binary",
+  "primary_metric": "auroc",
+  "split": "scaffold",
+  "seed": 0,
+  "method": "MV-FREX",
+  "architecture": "mlp",
+  "best_epoch": 17,
+  "train_n": 1553,
+  "val_n": 194,
+  "test_n": 194,
+  "val_metrics": {
+    "auroc": 0.845786726323639,
+    "auprc": 0.9390185010728717,
+    "balanced_accuracy": 0.767710663683818,
+    "f1": 0.926984126984127,
+    "mcc": 0.6430755499313399,
+    "brier": 0.10475643759820245,
+    "ece": 0.08597940452440075
+  },
+  "test_metrics": {
+    "auroc": 0.8850289495450786,
+    "auprc": 0.9664704952172691,
+    "balanced_accuracy": 0.7690653432588916,
+    "f1": 0.9245283018867925,
+    "mcc": 0.5885878075631726,
+    "brier": 0.09696161413542194,
+    "ece": 0.05640849123526478
+  },
+  "elapsed_seconds": 0.2996480464935303
+}

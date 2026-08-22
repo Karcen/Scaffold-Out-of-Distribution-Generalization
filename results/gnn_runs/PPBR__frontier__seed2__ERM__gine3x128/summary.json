@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "run_id": "PPBR__frontier__seed2__ERM__gine3x128",
+  "task": "PPBR",
+  "tdc_name": "PPBR_AZ",
+  "kind": "regression",
+  "primary_metric": "mae",
+  "split": "frontier",
+  "seed": 2,
+  "method": "ERM",
+  "architecture": "gine3x128",
+  "parameter_count": 304260,
+  "best_epoch": 0,
+  "train_n": 1103,
+  "val_n": 159,
+  "test_n": 316,
+  "val_metrics": {
+    "mae": 12.200804176570484,
+    "rmse": 19.135440708613032,
+    "spearman": 0.1293767546327747,
+    "r2": -0.19117609303927363
+  },
+  "test_metrics": {
+    "mae": 18.246019632001467,
+    "rmse": 27.94096134826812,
+    "spearman": 0.22763204686354782,
+    "r2": -0.3799693222000342
+  },
+  "elapsed_seconds": 2.785163164138794
+}
