@@ -1,3 +1,5 @@
+# arXiv: https://arxiv.org/abs/2607.10729
+
 # Structural-frontier OOD audit for ADMET models
 
 This repository reproduces a six-endpoint evaluation that contrasts an ordinary
