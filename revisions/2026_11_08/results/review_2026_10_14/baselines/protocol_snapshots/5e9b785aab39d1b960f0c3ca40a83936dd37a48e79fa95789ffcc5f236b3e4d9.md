@@ -1,0 +1,41 @@
+# Six-endpoint baseline protocol
+
+Frozen before fitting on 14 October 2026. Scope: reviewer request 1 and the regression constant control from request 3. This protocol produces new results; it does not replace or overwrite prior experiment files.
+
+## Data and partitions
+
+Use the six harmonised datasets in `results/revision/experiments/{endpoint}/dataset.csv.gz` with their existing connectivity-based curation and labels. Reuse exactly the corresponding scaffold, descriptor-frontier and Morgan-frontier manifests at target test fraction 0.20 for allocation/fitting seeds 0, 1, 2, 3 and 4. Copy each input dataset, metadata and manifest into the new output registry and retain its original source path/hash. Whole-group realised train/validation/test sizes remain those in the manifests. No new allocation, molecular standardisation, label filtering or test-set selection is performed in this baseline experiment.
+
+The validation partition remains held out. All models here use fixed settings and train only on the training partition; no hyperparameter search or validation/test-driven model selection is performed. The five frontier runs do not constitute independent chemical-domain replicates. Fixed-input linear fits can be numerically identical across fitting seeds.
+
+## Representations and transformations
+
+- Physchem: the nine descriptors in `codes/repro/grid_common.py`: molecular weight, calculated logP, rotatable bonds, hydrogen-bond acceptors/donors, TPSA, aromatic rings, heavy atom count and QED. Use the cached feature matrix for BBB/DILI and the same featuriser for the remaining endpoints.
+- MACCS: unchanged 167-bit fingerprints.
+- Morgan for random forests: unchanged radius-2, 1,024-bit fingerprints from each endpoint's existing feature cache.
+- Continuous descriptors use the old common pipeline: median imputation fitted on training rows; training-fitted `RobustScaler(quantile_range=(10,90))`; clipping to [-20,20]; float32 inputs. Fingerprints remain raw binary bits. No descriptor or target transform is fitted on validation/test rows.
+
+## Fixed models
+
+| Model | Classification endpoints | Regression endpoints | Frozen settings |
+| --- | --- | --- | --- |
+| Physchem linear | LogisticRegression | Ridge | LR: L2, C=1, L-BFGS, max_iter=2,000, tol=1e-4, no class weighting. Ridge: alpha=1, fit_intercept=True, solver=lsqr, tol=1e-8; fit a target StandardScaler on training labels, then invert predictions to the original units. |
+| MACCS linear | LogisticRegression | Ridge | Same linear-model settings; raw bits. |
+| Morgan random forest | RandomForestClassifier | RandomForestRegressor | 200 trees, max_features=sqrt, min_samples_leaf=2, max_depth=None, bootstrap=True, n_jobs=2, random_state equal to the run seed. Classification criterion=gini; regression criterion=squared_error; other estimator defaults are saved in full. |
+| Training median | Not applicable | Constant prediction | A single median computed from the training labels; repeated unchanged on test rows. |
+
+Classification endpoints: BBB, HIA, CYP2D6 and DILI. Regression endpoints: PPBR and Solubility. These choices imply 270 fitted model runs and 30 constant-control records, for 300 records in total. Random-forest regression fits the original targets and is identified as its own fixed model recipe; only Ridge uses training-fitted target scaling. The constants are recorded as controls, not as trained stochastic models. Existing graph-control results remain a separately documented recipe. BBB now uses the same common RobustScaler/raw-bit rule as the other endpoints, rather than the separate StandardScaler LR sensitivity recipe.
+
+## Metrics and output
+
+Reuse `codes/scaffold/src/metrics.py`: AUROC, average precision (reported as AUPRC), balanced accuracy, F1, MCC, Brier and ten-bin ECE for classification; MAE, RMSE, Spearman correlation and R² for regression. The primary metric follows the endpoint metadata. For regression additionally record `mae_skill_vs_train_median = 1 - model_MAE / train_median_MAE`; if the denominator is zero, save a missing skill value and a diagnostic flag rather than substitute a score. Record test prevalence, or target mean/SD/range, with train and validation composition.
+
+Each run saves a JSON configuration with all model settings and fitted input-transformation parameters, source/code/protocol hashes, allocation/fitting seed, copied split path/hash, per-molecule predictions (`row_index`, stable connectivity key, label and prediction), a fitted estimator where applicable, metrics, convergence/metric warnings, iteration counts where available, elapsed seconds and success/failure status. Dataset and feature registries retain exact row order. DILI physchem/MACCS LR predictions are checked against the matching prior common-pipeline predictions as an implementation/order check; discrepancies are reported rather than hidden.
+
+New output root: `results/review_2026_10_14/baselines/`. New code: `codes/review_2026_10_14/baselines.py`. Run sequentially with BLAS/OpenMP limits of two threads and RF `n_jobs=2`; avoid CPU oversubscription. Completed runs are resumable only when their stored config/code/protocol/input hashes still match. An aggregate registry and SHA-256 manifest are updated after each endpoint and at completion. No manuscript conclusion is written before successful output validation.
+
+## Prespecified linear-model completion amendment
+
+Added on 14 October 2026, before any additional Morgan linear fits. The revision coordinator requested Morgan LR/Ridge on all six endpoints, three existing allocation regimes and five seeds so that the fixed baselines and null-allocation comparisons use the same common feature/target-processing rule, including BBB. This addition completes the planned linear-model grid; it is not selected from the observed fit results.
+
+The original 300 records remain intact, with their own original code/protocol hashes and snapshots. Add 90 Morgan linear fits with the same LR/Ridge settings above and unchanged raw Morgan bits, bringing the full registry to 390 records, including the 30 median controls. Run the added fits as a separate `--morgan-linear-only` batch; do not revisit or rerun the completed physchem, MACCS, random-forest or constant records. Save an additional code/protocol snapshot and keep environment records separate for each batch. The transformation and fitting helper functions are unchanged by this amendment.

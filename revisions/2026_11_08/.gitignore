@@ -1,0 +1,13 @@
+._*
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+/work/
+/data/raw/
+/results/**/runs/
+/results/**/splits/
+/results/**/features.npz
+/results/**/dataset.csv.gz
+/provenance/public_input_access.json

@@ -1,0 +1,38 @@
+{
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "scipy": "1.16.3",
+  "sklearn": "1.7.2",
+  "rdkit": "2026.03.2",
+  "executable": "<environment>/admet-repro/bin/python",
+  "started_utc": "2026-10-14T02:16:52.056818+00:00",
+  "script_sha256": "47051967ac56dfe1d17a368967bfde5aa584df3f1d038d7079daaaa13cfcbab3",
+  "protocol_sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf",
+  "common_helper_sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf",
+  "arguments": {
+    "endpoints": [
+      "BBB",
+      "HIA",
+      "CYP2D6",
+      "PPBR",
+      "Solubility",
+      "DILI"
+    ],
+    "draws": 50,
+    "reverse_seeds": 5,
+    "workers": 2,
+    "splits_only": false
+  },
+  "random_base_seed": 2026101400,
+  "reverse_allocation_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "fitting_seed": 0,
+  "deterministic_fit_once_per_distinct_partition": true
+}

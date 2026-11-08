@@ -1,0 +1,56 @@
+{
+  "fingerprint": "RDKit Morgan bit vector, radius=2, fpSize=2048, includeChirality=False, default bond/atom invariants, ECFP4",
+  "rdkit_version": "2026.03.2",
+  "regimes": [
+    "scaffold",
+    "descriptor",
+    "morgan"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "k": [
+    5,
+    1
+  ],
+  "selection": "prespecified diagnostic; no validation/test label tuning",
+  "tied_similarity": "ascending stable training row ID",
+  "weighted_prediction": "sum(similarity*training label)/sum(similarity); zero denominator uses that fit training prevalence",
+  "unweighted_prediction": "mean labels of selected neighbours",
+  "pair_accounting": "error=1 for inversion and 0.5 for tie; split error equally across positive and negative endpoints; group sum of normalised burdens equals 1-AUROC; descriptive accounting, not causal contribution",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261014,
+  "interval_estimand": "mean five-seed AUROC conditional on fitted predictors and observed descriptor test compounds/groups; shared weights, no refitting",
+  "group_resampling": "whole fixed grouping units; unstratified group multinomial multiplicities",
+  "paired_family": "all four neighbour methods minus Morgan MLP, exploratory; 95% maximum standardised centred-deviation simultaneous intervals",
+  "source_sha256": {
+    "results/revision/experiments/BBB/dataset.csv.gz": "0626a5505646a0c922ae33e14c7085e2884c46aa1f53391c1a96fa8fef185418",
+    "results/revision/experiments/BBB/features.npz": "269d25e3a68455f956bd53edd0b15be0adb3e4c2d16bbf3de511af96017def09",
+    "results/revision/experiments/BBB/splits/scaffold_test20_seed0.csv.gz": "b2d5e8b9280067e54d746129dd9f43ea65fb639cabcdc51ffad49e7689746668",
+    "results/revision/experiments/BBB/splits/scaffold_test20_seed1.csv.gz": "62b3d6644cc2b13be037592bc4d64d959875c9ae5c237e3580a407daf54e16c2",
+    "results/revision/experiments/BBB/splits/scaffold_test20_seed2.csv.gz": "db9ecb68f512318fcdfde900a83559ffa555644da61187d1e130e5a6a6bdddac",
+    "results/revision/experiments/BBB/splits/scaffold_test20_seed3.csv.gz": "9a07f61045ec8f000cdca9f773e1c321c653a925931322d26313b0ba2f224812",
+    "results/revision/experiments/BBB/splits/scaffold_test20_seed4.csv.gz": "b5d285b4643fb0e9ffcc1a2bb9aadc1c2f69fe46f75e47dd0f8aee0b18c6f023",
+    "results/revision/experiments/BBB/splits/descriptor_test20_seed0.csv.gz": "f90f5ecde623cfc0ad0b8cdaa2707bb706ab6c779d87d3440de3d879a7817085",
+    "results/revision/experiments/BBB/runs/BBB__descriptor__test20__morgan__mlp__seed0__common/predictions.csv.gz": "b700914911f14fd0de09e43385fe725ce3967d1c87fed4bc4611e37e95bb7452",
+    "results/revision/experiments/BBB/splits/descriptor_test20_seed1.csv.gz": "7ae56d3923b65608ff71ceb0e99606f6ec670afe17e20c8e4b631e659e63c198",
+    "results/revision/experiments/BBB/runs/BBB__descriptor__test20__morgan__mlp__seed1__common/predictions.csv.gz": "de57b3e82d34b45a0c3ce6b6fd06dde051fe07b11c3186f33db46525f5339dd5",
+    "results/revision/experiments/BBB/splits/descriptor_test20_seed2.csv.gz": "e409e8e4f3998a06dbfe8bd557bf5c07f339278c0c06aa65935f02262f7b9b5b",
+    "results/revision/experiments/BBB/runs/BBB__descriptor__test20__morgan__mlp__seed2__common/predictions.csv.gz": "313b884884b013f7e97694a704f73fdeae86827a75fa0cd61c1da93facb6762e",
+    "results/revision/experiments/BBB/splits/descriptor_test20_seed3.csv.gz": "5c2df4e1d232810cad859148df6c4c56092cdf30b9e7fe371cd616eee50a3542",
+    "results/revision/experiments/BBB/runs/BBB__descriptor__test20__morgan__mlp__seed3__common/predictions.csv.gz": "e16782ce93cc22d18e549307be1f58162a3483e429adda1004ff5e32495fc42f",
+    "results/revision/experiments/BBB/splits/descriptor_test20_seed4.csv.gz": "b40120139b9d9dcf3edb89092616fe26e3be9fa4d614bf0b6868e89b1f5ebcc9",
+    "results/revision/experiments/BBB/runs/BBB__descriptor__test20__morgan__mlp__seed4__common/predictions.csv.gz": "32affc081865193d0ed59be552afdbabde7a4a84f3067f709b275a1b677a6ffb",
+    "results/revision/experiments/BBB/splits/morgan_test20_seed0.csv.gz": "5696e78e146d255b5684b419a67fbe84ccd0205f7b57f1b603c00198fd3b5314",
+    "results/revision/experiments/BBB/splits/morgan_test20_seed1.csv.gz": "6b29b20b6b425d0923ef967956cddb3f0494fa7c4a3bc1cd0c24e2cfa9aa909c",
+    "results/revision/experiments/BBB/splits/morgan_test20_seed2.csv.gz": "e10e227d3ec930784b6fb7e2d205194bf554da751871af62503dc1cae3d75249",
+    "results/revision/experiments/BBB/splits/morgan_test20_seed3.csv.gz": "244fafef0ac59a94f4b6c6e16466b3ac12689fda8e5101eb62541cc75583c011",
+    "results/revision/experiments/BBB/splits/morgan_test20_seed4.csv.gz": "1bda111fbbf87453dcb7dae6ae5c654e804cda0db178f3530e25297026bb1656",
+    "codes/review_2026_10_14/statistics.py": "8d3a567a3b27c6ccd209aa9ede67d032dfe23dcb13d703572711dafa156b7a7c"
+  },
+  "script_sha256": "1088fd4d91d91a2e01672d47754becf911e0d71feaa26db88e7c43f4a5cbe3a7"
+}

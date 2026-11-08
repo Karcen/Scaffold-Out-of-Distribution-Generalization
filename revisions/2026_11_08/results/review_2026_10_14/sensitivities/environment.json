@@ -1,0 +1,11 @@
+{
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "rdkit": "2026.03.2",
+  "torch": "2.12.0",
+  "cpu_threads": 2,
+  "protocol_sha256": "8c0384834359fb4c6fdfb7fa5322c69bc213fc32aed2bd18061f80eaeae8d01d",
+  "script_sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82",
+  "helper_sha256": "956e9f233b1cd8c266d61dd33c8c358e09bcaa77bf7932094f23bbd7f82a4d7e"
+}

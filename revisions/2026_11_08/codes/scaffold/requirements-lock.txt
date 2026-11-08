@@ -1,0 +1,10 @@
+# Exact core environment used for the recorded results (Python 3.13.9).
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+rdkit==2026.03.2
+torch==2.12.0
+matplotlib==3.10.6
+pillow==12.3.0
+pytest==8.4.2

@@ -1,0 +1,1538 @@
+{
+  "scope": "Source-code addition with selected aggregate results and recipe metadata. No raw molecular inputs, labels, predictions, weights or manuscripts.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 194,
+      "sha256": "a6a1bf150051275ad9169e306f5e93c5586b4ea6f77324512fcfffa03820c21f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7248,
+      "sha256": "835052c3801380035cec90c540d6a9f34149ba36adeebcc79dc23aba477c89c7"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 2546,
+      "sha256": "7ce3b3569e2cd7c7fbfa1668425c8b229477ca8685458575d043ca15d16a6520"
+    },
+    {
+      "path": "codes/README.md",
+      "bytes": 759,
+      "sha256": "3f5074bcb02ff0975a8e398ea9fdc7557b08297f6c48364bd850926201cbff7e"
+    },
+    {
+      "path": "codes/figures_2026_11_08/benchmark_allocation.py",
+      "bytes": 11028,
+      "sha256": "6be15df36cb32241cb76d6d9e780b8614785710930d94045a89fa6feb99e0abc"
+    },
+    {
+      "path": "codes/figures_2026_11_08/composition_ranking.py",
+      "bytes": 15892,
+      "sha256": "e6e3be5f5d63998caf1bec92ac68169d27e8966afd3207f4a3dee6a99b5ed36d"
+    },
+    {
+      "path": "codes/figures_2026_11_08/gradients.py",
+      "bytes": 9697,
+      "sha256": "7dba90a2fce5bf6a16686e532f9a97e8ef1ce048b584658071f6a09beeaf9366"
+    },
+    {
+      "path": "codes/figures_2026_11_08/prepare_benchmark_allocation.py",
+      "bytes": 4784,
+      "sha256": "d4e4d207b2850a82e9182700c444a3907ca0eb07a18bb34f08b5642927c33159"
+    },
+    {
+      "path": "codes/figures_2026_11_08/supplementary_panels.py",
+      "bytes": 22446,
+      "sha256": "83d3c87d3d0e2f384aea5e7717bc5269919ebf8bc2c5456025b2d38ffbf685b9"
+    },
+    {
+      "path": "codes/figures_2026_11_08/validate_exports.py",
+      "bytes": 3418,
+      "sha256": "5a5dd5df120520e8ff67bbe491a8a369c57c4c98cf4262cf22941a46cfff693a"
+    },
+    {
+      "path": "codes/plot_available_figures.py",
+      "bytes": 1578,
+      "sha256": "89e82ca5059843a37bb2cbdaef663df1d6813f15202cf4292fbe4fa5443486ac"
+    },
+    {
+      "path": "codes/prepare_public_inputs.py",
+      "bytes": 2335,
+      "sha256": "43b6d91b1d027868d4ad4b533e0f7f3a942d983f96bc8a26fda3737c0338724d"
+    },
+    {
+      "path": "codes/repro/analyze_submission_revision.py",
+      "bytes": 12922,
+      "sha256": "a21e9275ce33b9a0a9ad1e01327bb393e3ad804fd3da53808fcb1332fd88fb2f"
+    },
+    {
+      "path": "codes/repro/arch_models.py",
+      "bytes": 8988,
+      "sha256": "fdc724afa89fa71e988a50e532a42185a5676ab9e4d6ff332570576dd4de29bb"
+    },
+    {
+      "path": "codes/repro/grid_common.py",
+      "bytes": 8359,
+      "sha256": "9962c3aacc50cd4f9aea9a168554bab1a5230e008c8c5f4a51f20009015d3b83"
+    },
+    {
+      "path": "codes/repro/run_submission_revision.py",
+      "bytes": 17203,
+      "sha256": "cc96c96c4c2846ec381550b8e22e2a859df493464e7d1122757d7bb7b543eade"
+    },
+    {
+      "path": "codes/review_2026_10_14/allocation_controls.py",
+      "bytes": 25687,
+      "sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c"
+    },
+    {
+      "path": "codes/review_2026_10_14/baselines.py",
+      "bytes": 16799,
+      "sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3"
+    },
+    {
+      "path": "codes/review_2026_10_14/benchmark_uncertainty.py",
+      "bytes": 15442,
+      "sha256": "3a28091f146d4769cfd3f33625e8664932d7f0b61438c091f6635286679a9a03"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_baseline.py",
+      "bytes": 22082,
+      "sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_parallel_monitor.py",
+      "bytes": 2556,
+      "sha256": "be95a41e0d34b311e57b6abfb5fedf2096f5a8d869fa0a062ffe7b156c09b426"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_single_fit_worker.py",
+      "bytes": 2860,
+      "sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_fit_source.py",
+      "bytes": 22082,
+      "sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_regime_monitor.py",
+      "bytes": 2295,
+      "sha256": "2fe0299e1a52b17001218bf49d71892ad72efe5db20364011094382d806cd184"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_regime_worker.py",
+      "bytes": 2809,
+      "sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_worker.py",
+      "bytes": 2345,
+      "sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4"
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_uncertainty.py",
+      "bytes": 13801,
+      "sha256": "23252f2e8b8ad77b2b2e542abb749481fdeaede845d8b210634f59930221abf2"
+    },
+    {
+      "path": "codes/review_2026_10_14/composition.py",
+      "bytes": 6810,
+      "sha256": "4d72ca10f7dc8a0d529aaad0fc20b718db83540e7dd3b515a5f473fb5d79aca8"
+    },
+    {
+      "path": "codes/review_2026_10_14/cyclic_grid_uncertainty.py",
+      "bytes": 13292,
+      "sha256": "5d575f2db7204fe33b1c776bc4317c192c3993214b227c216347809c977bd37d"
+    },
+    {
+      "path": "codes/review_2026_10_14/knn_diagnostics.py",
+      "bytes": 11497,
+      "sha256": "1088fd4d91d91a2e01672d47754becf911e0d71feaa26db88e7c43f4a5cbe3a7"
+    },
+    {
+      "path": "codes/review_2026_10_14/knn_diagnostics_1024.py",
+      "bytes": 12271,
+      "sha256": "6c3b5b95b99a73a1baf99f08e5e8f2eb72aacc9d026fd7dc277b50a4c383df07"
+    },
+    {
+      "path": "codes/review_2026_10_14/sensitivities.py",
+      "bytes": 15125,
+      "sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82"
+    },
+    {
+      "path": "codes/review_2026_10_14/statistics.py",
+      "bytes": 12941,
+      "sha256": "8d3a567a3b27c6ccd209aa9ede67d032dfe23dcb13d703572711dafa156b7a7c"
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_batch_hashes.py",
+      "bytes": 4548,
+      "sha256": "0fac7adddcb45186b221b3dfe3e3fd7fe931ffacba09b91174d9a862b51d6684"
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_chemprop.py",
+      "bytes": 8268,
+      "sha256": "3d44a3947e8fbdf07abbb2b2ffbf951ddf7d04cd07123ecfd411e147078ceb31"
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_chemprop_uncertainty.py",
+      "bytes": 3743,
+      "sha256": "9a393359e96dd47e20f97f442d34543746d00a6151ec8732e983bcaecbadd3c1"
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_sensitivities.py",
+      "bytes": 7813,
+      "sha256": "b3baaf7816ac3e285734bc32d73bd073e572ac70ecc956dfcfa442a975eef350"
+    },
+    {
+      "path": "codes/scaffold/pyproject.toml",
+      "bytes": 67,
+      "sha256": "e8c4628ed8f1f109ed9455dff39a67374c0711c7e24e6a5114517abe41fb61db"
+    },
+    {
+      "path": "codes/scaffold/requirements-lock.txt",
+      "bytes": 212,
+      "sha256": "9d91543c4050609d9c282e27a1dd3cac191646f9a7d3876d6f47e338f60c10a2"
+    },
+    {
+      "path": "codes/scaffold/requirements.txt",
+      "bytes": 184,
+      "sha256": "25a8b9adc4183ab753dafbc2badd8529a1a75e475221e683b4a4070c16b7ab9f"
+    },
+    {
+      "path": "codes/scaffold/scripts/download_external_data.py",
+      "bytes": 1149,
+      "sha256": "92b3d80f5a5499ec51a42ea4661dfbea3099f83c1ccf498e58fa2d7d91fbb753"
+    },
+    {
+      "path": "codes/scaffold/scripts/run_gnn_control.py",
+      "bytes": 18031,
+      "sha256": "e09975a904b6df0d6c3c5b5f4c94f5fac8cba1f41405bc7f74304a93f03ff73e"
+    },
+    {
+      "path": "codes/scaffold/src/__init__.py",
+      "bytes": 80,
+      "sha256": "fd959882433900c6d2b47ee423fb93029898759188762f1cf3704e68e9bd443d"
+    },
+    {
+      "path": "codes/scaffold/src/chem.py",
+      "bytes": 5991,
+      "sha256": "a61a4edbefd923e182691594e58aa591d6eb0c25f75a9c50ad14efb7912242e1"
+    },
+    {
+      "path": "codes/scaffold/src/data.py",
+      "bytes": 4283,
+      "sha256": "50587d4bd7fc0e004634e5c20c17125ef3891a12a66d1e775efd2487ff291789"
+    },
+    {
+      "path": "codes/scaffold/src/environments.py",
+      "bytes": 4773,
+      "sha256": "3b145978472f76578dfbecef3484f9479734b931d69f4120073f8bcfea61e202"
+    },
+    {
+      "path": "codes/scaffold/src/graph_models.py",
+      "bytes": 12566,
+      "sha256": "24141b4f5367fa04180a787df73fae8251d7e759aa54484e314b26aa93e2e9ae"
+    },
+    {
+      "path": "codes/scaffold/src/metrics.py",
+      "bytes": 2557,
+      "sha256": "74f6cfdd077780a108f59d2b2b3e2af6817d6a66d10d3bcf5d3d1c584e43ef59"
+    },
+    {
+      "path": "codes/scaffold/src/models.py",
+      "bytes": 6934,
+      "sha256": "88e45763a50e9e2342b5e084426284ad1b8babd2cc7d822a54054f07d468b4e8"
+    },
+    {
+      "path": "codes/scaffold/src/objectives.py",
+      "bytes": 5652,
+      "sha256": "4fca95d4677772aa5bd45a62924e54b2ebcb6d77541d01e21559f47ca3adcdf8"
+    },
+    {
+      "path": "codes/scaffold/src/splits.py",
+      "bytes": 9568,
+      "sha256": "10ad6c3535ada823da0cb0f4f030846c521b38ebaa3ebfdebf372b2b1d446765"
+    },
+    {
+      "path": "codes/scaffold/tests/test_objectives.py",
+      "bytes": 980,
+      "sha256": "b92fee1659df140549ee0f047411297e77236de10c135dac239d5239527ff73c"
+    },
+    {
+      "path": "codes/scaffold/tests/test_splits.py",
+      "bytes": 720,
+      "sha256": "a2bc1e0c81a3c69c5fcff6129e9d9548a8372e1999bbeba39c1610706a79da6f"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2180,
+      "sha256": "aabaf76d6198da89128a183dc739867b23b404d64a00a36eb0f031a80895034b"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 690,
+      "sha256": "241a1ffaa3e32d404f77983d365a61e8cab395a4c9dce9f68fa41edd3fe07dff"
+    },
+    {
+      "path": "docs/review_2026_10_14/ALLOCATION_CONTROLS_PROTOCOL.md",
+      "bytes": 5854,
+      "sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf"
+    },
+    {
+      "path": "docs/review_2026_10_14/BASELINE_PROTOCOL.md",
+      "bytes": 6432,
+      "sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9"
+    },
+    {
+      "path": "docs/review_2026_10_14/BENCHMARK_UNCERTAINTY_PROTOCOL.md",
+      "bytes": 3717,
+      "sha256": "1ba83f26c6c7e00c403e60d8a2a1cc9bc7ce424fc6dc9076be7e9d73fa55d97b"
+    },
+    {
+      "path": "docs/review_2026_10_14/CHEMPROP_PROTOCOL.md",
+      "bytes": 5643,
+      "sha256": "c7e52e06490d37dd52aef7a5e422c918eb272fdca7fd3cdd84a8c87e64613e27"
+    },
+    {
+      "path": "docs/review_2026_10_14/CHEMPROP_UNCERTAINTY_PROTOCOL.md",
+      "bytes": 2537,
+      "sha256": "ba23da036d8796fa017e7efcc7656d8cbca8fc7d506ec597619ca31ae94dad75"
+    },
+    {
+      "path": "docs/review_2026_10_14/COMPOSITION_PROTOCOL.md",
+      "bytes": 1220,
+      "sha256": "f2085b0d33ee20fb96a2c1e4f9b29611808052c5c72101e04a11f553932288c7"
+    },
+    {
+      "path": "docs/review_2026_10_14/SENSITIVITY_PROTOCOL.md",
+      "bytes": 2580,
+      "sha256": "8c0384834359fb4c6fdfb7fa5322c69bc213fc32aed2bd18061f80eaeae8d01d"
+    },
+    {
+      "path": "docs/review_2026_10_14/STATISTICAL_PLAN.md",
+      "bytes": 4357,
+      "sha256": "84a8339fb30eb6eaf90fc8f1a48bd5445b620b8a4c9ab239305edccb4e194ba1"
+    },
+    {
+      "path": "docs/revision/EXPERIMENT_PROTOCOL.md",
+      "bytes": 6328,
+      "sha256": "144de9cde768ada78a5bbea01df018271da9df39d2caa55807d29a0cafaa982c"
+    },
+    {
+      "path": "requirements-core.txt",
+      "bytes": 294,
+      "sha256": "b45f745ab90ee98e19165220d0f2f80a23b152efeb8c388782f6bba00e906c3d"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 886,
+      "sha256": "572114508ffc25af9e506138b148b2590613a3ddbaba429f85cbafa25899b103"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure1_bbb_absolute_display.csv",
+      "bytes": 2614,
+      "sha256": "bc187ec62563e6a7a0040849b542063ffffa37d0c6ce0c098369cd168433c996"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure1_endpoint_contrasts_display.csv",
+      "bytes": 9261,
+      "sha256": "a600f2bb12c75af81bc27448ff78dbd50b694507d6b51289b049369a59a4f746"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure3_allocation_observations_display.csv",
+      "bytes": 724150,
+      "sha256": "82c6dc74987de73b6e02102129e77245c1e0bdfbe10978f7dd44e1f2cd05b8d4"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure3_allocation_summary_display.csv",
+      "bytes": 7199,
+      "sha256": "ce3a543c7364be3d0c9272254cb0b2f2de301f43e5b91f1f5616a9de3070cd44"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/allocation_summary.csv",
+      "bytes": 7270,
+      "sha256": "2d6aea15290d3eaef457aa2f91c1ccb5e54070fd32d92e8eae8eeb17953e0e44"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/baseline_helper_snapshot.py",
+      "bytes": 15733,
+      "sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/code_snapshot.py",
+      "bytes": 22875,
+      "sha256": "47051967ac56dfe1d17a368967bfde5aa584df3f1d038d7079daaaa13cfcbab3"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/code_snapshots/80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c.py",
+      "bytes": 25687,
+      "sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/environment.json",
+      "bytes": 1033,
+      "sha256": "189a1fc10a7a297de3cd2d6ebeb304c21e2874fa6a81644a23fac74d05972716"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/protocol_snapshot.md",
+      "bytes": 5854,
+      "sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/runs.csv",
+      "bytes": 699222,
+      "sha256": "60e67af18ad1cfd738bd76c4751e5c8c50d0d8721acf25508d096fba3f8fbc4a"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/validation_script.py",
+      "bytes": 7212,
+      "sha256": "61e5529a24e187b9a573e86ecaaa8ddca5850dde7f159ec6152c7d9c79d7346e"
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/code_snapshots/9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf.py",
+      "bytes": 15733,
+      "sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf"
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/code_snapshots/d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3.py",
+      "bytes": 16799,
+      "sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3"
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/environment.json",
+      "bytes": 592,
+      "sha256": "dd127a9bf96db0ef62671f5ab3cf515d8fabf4061c3ea88d98b3db8fd92bcbd0"
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/protocol_snapshots/5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9.md",
+      "bytes": 6432,
+      "sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9"
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/protocol_snapshots/d3f5a0bcf8e32bd1246f8debbc1410c67cf430493ff79e9e902310b34a16481d.md",
+      "bytes": 5355,
+      "sha256": "d3f5a0bcf8e32bd1246f8debbc1410c67cf430493ff79e9e902310b34a16481d"
+    },
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/config.json",
+      "bytes": 253724,
+      "sha256": "36077f3ad63585ce43a641dc7b8712a5748adea4d7eba43db632ac99105ec235"
+    },
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/frontier_minus_scaffold.csv",
+      "bytes": 51438,
+      "sha256": "5da7dd7a634780634964b81c24ab22fc4ba23d4056b69b45e637f2c04c29aff3"
+    },
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/model_intervals.csv",
+      "bytes": 84082,
+      "sha256": "3818301e942da74ce29a241c823f53439e947a98a36f8bd637362507bfe3167c"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734.py",
+      "bytes": 22082,
+      "sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5.py",
+      "bytes": 2860,
+      "sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/971a2d6bd98b6f57d35e156934065d44f630784be6f93cd83ec3a63fb5f240b1.py",
+      "bytes": 20843,
+      "sha256": "971a2d6bd98b6f57d35e156934065d44f630784be6f93cd83ec3a63fb5f240b1"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34.py",
+      "bytes": 2809,
+      "sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/ba5737eeca2c31e583e288cf1b8e2c872c5c10fb4ffdd8926d7bcad4f9134f56.py",
+      "bytes": 21178,
+      "sha256": "ba5737eeca2c31e583e288cf1b8e2c872c5c10fb4ffdd8926d7bcad4f9134f56"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4.py",
+      "bytes": 2345,
+      "sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/environment.json",
+      "bytes": 1982,
+      "sha256": "89e03939b30e900cd9a16865951f39b0659ceb5c4b81ac71d14668806057b6b9"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/protocol_snapshots/8607185e8be70b332c209af34db67c611de97b6dea6ff057a8e17015cd723272.md",
+      "bytes": 5643,
+      "sha256": "c7e52e06490d37dd52aef7a5e422c918eb272fdca7fd3cdd84a8c87e64613e27"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/requirements-lock.txt",
+      "bytes": 1030,
+      "sha256": "5a7e55b7cc997aed5e233dae411c18b4bdebe8df0161dfa37bd1f08662c69015"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/config.json",
+      "bytes": 135132,
+      "sha256": "4f9f34546609d1f3a5be2d03e67a721ea937b7beeb33da190ac92ab6dc49540a"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/frontier_minus_scaffold.csv",
+      "bytes": 9091,
+      "sha256": "136de53e070c884593536910a3720591bce32a1966ac2d4d9592e254c6701794"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/model_intervals.csv",
+      "bytes": 14504,
+      "sha256": "5edc8280ee096ade7e31e43da4790c56e58812b3c00d10a1affa67247c472db1"
+    },
+    {
+      "path": "results/review_2026_10_14/composition/split_composition.csv",
+      "bytes": 22805,
+      "sha256": "329f7e65541f2c03bc178a5a9cea46cccee143bbccbfa2cb193d0fcec7d6d69d"
+    },
+    {
+      "path": "results/review_2026_10_14/cyclic_grid/config.json",
+      "bytes": 55069,
+      "sha256": "a21d5b0194613890e69aab99163060c387d605e186a63611678b9f97f0279a7e"
+    },
+    {
+      "path": "results/review_2026_10_14/knn/config.json",
+      "bytes": 4864,
+      "sha256": "aaada11ea106e0046e1dc286784ff7e75e3eae68a10a4ecdd428e9a3f9f4310f"
+    },
+    {
+      "path": "results/review_2026_10_14/knn_matched_1024/config.json",
+      "bytes": 5240,
+      "sha256": "db04ceffa7ee42b6c19713fa70ceb01b990b18b70afca2ec9974767260061d2c"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/baselines.py",
+      "bytes": 16563,
+      "sha256": "956e9f233b1cd8c266d61dd33c8c358e09bcaa77bf7932094f23bbd7f82a4d7e"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/sensitivity_2471939902b30d795d8e81617c2df9dd55047bfc4f5e6234cbbf2e8b56215a43.py",
+      "bytes": 14814,
+      "sha256": "2471939902b30d795d8e81617c2df9dd55047bfc4f5e6234cbbf2e8b56215a43"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/sensitivity_24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82.py",
+      "bytes": 15125,
+      "sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/environment.json",
+      "bytes": 457,
+      "sha256": "653cc996bfca72fdb1ee36e1de985458f78723902c55efa2c3a89e9e539866da"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/runs.csv",
+      "bytes": 380848,
+      "sha256": "d988dad2636e2fdeb64115463e42fa7b921b81288855ba203e5a203a9839c49a"
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/config.json",
+      "bytes": 56728,
+      "sha256": "f30a4468e0a8d828c1cc716f94e97fcbba4f0a087c51e8af1837452ad5a43b9b"
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/model_intervals.csv",
+      "bytes": 8111,
+      "sha256": "6586b1beec20116bfe37ddc434552dd9e108683fc51409b87a6931c44403201c"
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/top1_frequency.csv",
+      "bytes": 4982,
+      "sha256": "6e79cf98be03c28b584b82362e5b5f933354419b264cac75313b449ba0ec9ce6"
+    },
+    {
+      "path": "results/revision/analysis/difficulty_distance_runs.csv",
+      "bytes": 66287,
+      "sha256": "43588ed0991c72fd0714d87cfce4717971979ed5eb01ac44eb5d0d53379855cd"
+    },
+    {
+      "path": "results/revision/experiments/environment_architecture.json",
+      "bytes": 499,
+      "sha256": "1e40518b889f51677d8d88824c64f567bc71c156f188b7fc7ad297d50a83a75c"
+    },
+    {
+      "path": "results/revision/experiments/environment_benchmark.json",
+      "bytes": 469,
+      "sha256": "6659072dbe366740f7846db17fccf7ee1061ffcc27c8571acb2707ceb0fd1db0"
+    },
+    {
+      "path": "results/revision/experiments/environment_grid.json",
+      "bytes": 490,
+      "sha256": "3fdea72ce48abc1522acd3847ba52cc0b17e60258de476a4ac120eada98c2324"
+    }
+  ],
+  "original_to_public_source_identities": [
+    {
+      "path": "codes/figures_2026_11_08/benchmark_allocation.py",
+      "original_sha256": "731129afbe6f93a9e98fa0534659fad7550a746553509019ab5ac43357a71437",
+      "public_sha256": "6be15df36cb32241cb76d6d9e780b8614785710930d94045a89fa6feb99e0abc",
+      "changes": [
+        "External figure-QA path resolved through NATURE_FIGURE_SKILL"
+      ]
+    },
+    {
+      "path": "codes/figures_2026_11_08/composition_ranking.py",
+      "original_sha256": "ea864e64eb11a4e00e0a8ac74dc2f7e33f74d053216172fba67ed60b11977291",
+      "public_sha256": "e6e3be5f5d63998caf1bec92ac68169d27e8966afd3207f4a3dee6a99b5ed36d",
+      "changes": [
+        "External figure-QA path resolved through NATURE_FIGURE_SKILL"
+      ]
+    },
+    {
+      "path": "codes/figures_2026_11_08/gradients.py",
+      "original_sha256": "cc3191f6d91d81eb5269a98bce0ee7310ed360ac92bbe302132bbf2a7135fdd8",
+      "public_sha256": "7dba90a2fce5bf6a16686e532f9a97e8ef1ce048b584658071f6a09beeaf9366",
+      "changes": [
+        "External figure-QA path resolved through NATURE_FIGURE_SKILL"
+      ]
+    },
+    {
+      "path": "codes/figures_2026_11_08/prepare_benchmark_allocation.py",
+      "original_sha256": "d4e4d207b2850a82e9182700c444a3907ca0eb07a18bb34f08b5642927c33159",
+      "public_sha256": "d4e4d207b2850a82e9182700c444a3907ca0eb07a18bb34f08b5642927c33159",
+      "changes": []
+    },
+    {
+      "path": "codes/figures_2026_11_08/supplementary_panels.py",
+      "original_sha256": "d41ba3465fe64162b38e4f2fc6132f2cf1dc631190e3cbef6a197595bdf08be9",
+      "public_sha256": "83d3c87d3d0e2f384aea5e7717bc5269919ebf8bc2c5456025b2d38ffbf685b9",
+      "changes": [
+        "External figure-QA path resolved through NATURE_FIGURE_SKILL"
+      ]
+    },
+    {
+      "path": "codes/figures_2026_11_08/validate_exports.py",
+      "original_sha256": "c4e785780505466fdccff415282d8d83deea96ff876bb3b83cf2233d547928df",
+      "public_sha256": "5a5dd5df120520e8ff67bbe491a8a369c57c4c98cf4262cf22941a46cfff693a",
+      "changes": [
+        "External figure-QA path resolved through NATURE_FIGURE_SKILL"
+      ]
+    },
+    {
+      "path": "codes/repro/analyze_submission_revision.py",
+      "original_sha256": "a21e9275ce33b9a0a9ad1e01327bb393e3ad804fd3da53808fcb1332fd88fb2f",
+      "public_sha256": "a21e9275ce33b9a0a9ad1e01327bb393e3ad804fd3da53808fcb1332fd88fb2f",
+      "changes": []
+    },
+    {
+      "path": "codes/repro/arch_models.py",
+      "original_sha256": "fdc724afa89fa71e988a50e532a42185a5676ab9e4d6ff332570576dd4de29bb",
+      "public_sha256": "fdc724afa89fa71e988a50e532a42185a5676ab9e4d6ff332570576dd4de29bb",
+      "changes": []
+    },
+    {
+      "path": "codes/repro/grid_common.py",
+      "original_sha256": "a84f4f6921fc8c491d1cceb644a38e0da139d7ede0507d182fa6c3c36ad50c8b",
+      "public_sha256": "9962c3aacc50cd4f9aea9a168554bab1a5230e008c8c5f4a51f20009015d3b83",
+      "changes": [
+        "Private source-manuscript label removed from documentation only"
+      ]
+    },
+    {
+      "path": "codes/repro/run_submission_revision.py",
+      "original_sha256": "cc96c96c4c2846ec381550b8e22e2a859df493464e7d1122757d7bb7b543eade",
+      "public_sha256": "cc96c96c4c2846ec381550b8e22e2a859df493464e7d1122757d7bb7b543eade",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/allocation_controls.py",
+      "original_sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c",
+      "public_sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/baselines.py",
+      "original_sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3",
+      "public_sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/benchmark_uncertainty.py",
+      "original_sha256": "3a28091f146d4769cfd3f33625e8664932d7f0b61438c091f6635286679a9a03",
+      "public_sha256": "3a28091f146d4769cfd3f33625e8664932d7f0b61438c091f6635286679a9a03",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_baseline.py",
+      "original_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "public_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_parallel_monitor.py",
+      "original_sha256": "be95a41e0d34b311e57b6abfb5fedf2096f5a8d869fa0a062ffe7b156c09b426",
+      "public_sha256": "be95a41e0d34b311e57b6abfb5fedf2096f5a8d869fa0a062ffe7b156c09b426",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_single_fit_worker.py",
+      "original_sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5",
+      "public_sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_fit_source.py",
+      "original_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "public_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_regime_monitor.py",
+      "original_sha256": "2fe0299e1a52b17001218bf49d71892ad72efe5db20364011094382d806cd184",
+      "public_sha256": "2fe0299e1a52b17001218bf49d71892ad72efe5db20364011094382d806cd184",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_regime_worker.py",
+      "original_sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34",
+      "public_sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_solubility_worker.py",
+      "original_sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4",
+      "public_sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/chemprop_uncertainty.py",
+      "original_sha256": "23252f2e8b8ad77b2b2e542abb749481fdeaede845d8b210634f59930221abf2",
+      "public_sha256": "23252f2e8b8ad77b2b2e542abb749481fdeaede845d8b210634f59930221abf2",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/composition.py",
+      "original_sha256": "4d72ca10f7dc8a0d529aaad0fc20b718db83540e7dd3b515a5f473fb5d79aca8",
+      "public_sha256": "4d72ca10f7dc8a0d529aaad0fc20b718db83540e7dd3b515a5f473fb5d79aca8",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/cyclic_grid_uncertainty.py",
+      "original_sha256": "5d575f2db7204fe33b1c776bc4317c192c3993214b227c216347809c977bd37d",
+      "public_sha256": "5d575f2db7204fe33b1c776bc4317c192c3993214b227c216347809c977bd37d",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/knn_diagnostics.py",
+      "original_sha256": "1088fd4d91d91a2e01672d47754becf911e0d71feaa26db88e7c43f4a5cbe3a7",
+      "public_sha256": "1088fd4d91d91a2e01672d47754becf911e0d71feaa26db88e7c43f4a5cbe3a7",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/knn_diagnostics_1024.py",
+      "original_sha256": "6c3b5b95b99a73a1baf99f08e5e8f2eb72aacc9d026fd7dc277b50a4c383df07",
+      "public_sha256": "6c3b5b95b99a73a1baf99f08e5e8f2eb72aacc9d026fd7dc277b50a4c383df07",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/sensitivities.py",
+      "original_sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82",
+      "public_sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/statistics.py",
+      "original_sha256": "8d3a567a3b27c6ccd209aa9ede67d032dfe23dcb13d703572711dafa156b7a7c",
+      "public_sha256": "8d3a567a3b27c6ccd209aa9ede67d032dfe23dcb13d703572711dafa156b7a7c",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_batch_hashes.py",
+      "original_sha256": "0fac7adddcb45186b221b3dfe3e3fd7fe931ffacba09b91174d9a862b51d6684",
+      "public_sha256": "0fac7adddcb45186b221b3dfe3e3fd7fe931ffacba09b91174d9a862b51d6684",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_chemprop.py",
+      "original_sha256": "3d44a3947e8fbdf07abbb2b2ffbf951ddf7d04cd07123ecfd411e147078ceb31",
+      "public_sha256": "3d44a3947e8fbdf07abbb2b2ffbf951ddf7d04cd07123ecfd411e147078ceb31",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_chemprop_uncertainty.py",
+      "original_sha256": "9a393359e96dd47e20f97f442d34543746d00a6151ec8732e983bcaecbadd3c1",
+      "public_sha256": "9a393359e96dd47e20f97f442d34543746d00a6151ec8732e983bcaecbadd3c1",
+      "changes": []
+    },
+    {
+      "path": "codes/review_2026_10_14/validate_sensitivities.py",
+      "original_sha256": "b3baaf7816ac3e285734bc32d73bd073e572ac70ecc956dfcfa442a975eef350",
+      "public_sha256": "b3baaf7816ac3e285734bc32d73bd073e572ac70ecc956dfcfa442a975eef350",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/pyproject.toml",
+      "original_sha256": "e8c4628ed8f1f109ed9455dff39a67374c0711c7e24e6a5114517abe41fb61db",
+      "public_sha256": "e8c4628ed8f1f109ed9455dff39a67374c0711c7e24e6a5114517abe41fb61db",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/requirements-lock.txt",
+      "original_sha256": "9d91543c4050609d9c282e27a1dd3cac191646f9a7d3876d6f47e338f60c10a2",
+      "public_sha256": "9d91543c4050609d9c282e27a1dd3cac191646f9a7d3876d6f47e338f60c10a2",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/requirements.txt",
+      "original_sha256": "25a8b9adc4183ab753dafbc2badd8529a1a75e475221e683b4a4070c16b7ab9f",
+      "public_sha256": "25a8b9adc4183ab753dafbc2badd8529a1a75e475221e683b4a4070c16b7ab9f",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/scripts/download_external_data.py",
+      "original_sha256": "92b3d80f5a5499ec51a42ea4661dfbea3099f83c1ccf498e58fa2d7d91fbb753",
+      "public_sha256": "92b3d80f5a5499ec51a42ea4661dfbea3099f83c1ccf498e58fa2d7d91fbb753",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/scripts/run_gnn_control.py",
+      "original_sha256": "e09975a904b6df0d6c3c5b5f4c94f5fac8cba1f41405bc7f74304a93f03ff73e",
+      "public_sha256": "e09975a904b6df0d6c3c5b5f4c94f5fac8cba1f41405bc7f74304a93f03ff73e",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/__init__.py",
+      "original_sha256": "fd959882433900c6d2b47ee423fb93029898759188762f1cf3704e68e9bd443d",
+      "public_sha256": "fd959882433900c6d2b47ee423fb93029898759188762f1cf3704e68e9bd443d",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/chem.py",
+      "original_sha256": "a61a4edbefd923e182691594e58aa591d6eb0c25f75a9c50ad14efb7912242e1",
+      "public_sha256": "a61a4edbefd923e182691594e58aa591d6eb0c25f75a9c50ad14efb7912242e1",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/data.py",
+      "original_sha256": "50587d4bd7fc0e004634e5c20c17125ef3891a12a66d1e775efd2487ff291789",
+      "public_sha256": "50587d4bd7fc0e004634e5c20c17125ef3891a12a66d1e775efd2487ff291789",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/environments.py",
+      "original_sha256": "3b145978472f76578dfbecef3484f9479734b931d69f4120073f8bcfea61e202",
+      "public_sha256": "3b145978472f76578dfbecef3484f9479734b931d69f4120073f8bcfea61e202",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/graph_models.py",
+      "original_sha256": "24141b4f5367fa04180a787df73fae8251d7e759aa54484e314b26aa93e2e9ae",
+      "public_sha256": "24141b4f5367fa04180a787df73fae8251d7e759aa54484e314b26aa93e2e9ae",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/metrics.py",
+      "original_sha256": "74f6cfdd077780a108f59d2b2b3e2af6817d6a66d10d3bcf5d3d1c584e43ef59",
+      "public_sha256": "74f6cfdd077780a108f59d2b2b3e2af6817d6a66d10d3bcf5d3d1c584e43ef59",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/models.py",
+      "original_sha256": "88e45763a50e9e2342b5e084426284ad1b8babd2cc7d822a54054f07d468b4e8",
+      "public_sha256": "88e45763a50e9e2342b5e084426284ad1b8babd2cc7d822a54054f07d468b4e8",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/objectives.py",
+      "original_sha256": "4fca95d4677772aa5bd45a62924e54b2ebcb6d77541d01e21559f47ca3adcdf8",
+      "public_sha256": "4fca95d4677772aa5bd45a62924e54b2ebcb6d77541d01e21559f47ca3adcdf8",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/src/splits.py",
+      "original_sha256": "10ad6c3535ada823da0cb0f4f030846c521b38ebaa3ebfdebf372b2b1d446765",
+      "public_sha256": "10ad6c3535ada823da0cb0f4f030846c521b38ebaa3ebfdebf372b2b1d446765",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/tests/test_objectives.py",
+      "original_sha256": "b92fee1659df140549ee0f047411297e77236de10c135dac239d5239527ff73c",
+      "public_sha256": "b92fee1659df140549ee0f047411297e77236de10c135dac239d5239527ff73c",
+      "changes": []
+    },
+    {
+      "path": "codes/scaffold/tests/test_splits.py",
+      "original_sha256": "a2bc1e0c81a3c69c5fcff6129e9d9548a8372e1999bbeba39c1610706a79da6f",
+      "public_sha256": "a2bc1e0c81a3c69c5fcff6129e9d9548a8372e1999bbeba39c1610706a79da6f",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/ALLOCATION_CONTROLS_PROTOCOL.md",
+      "original_sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf",
+      "public_sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/BASELINE_PROTOCOL.md",
+      "original_sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9",
+      "public_sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/BENCHMARK_UNCERTAINTY_PROTOCOL.md",
+      "original_sha256": "1ba83f26c6c7e00c403e60d8a2a1cc9bc7ce424fc6dc9076be7e9d73fa55d97b",
+      "public_sha256": "1ba83f26c6c7e00c403e60d8a2a1cc9bc7ce424fc6dc9076be7e9d73fa55d97b",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/CHEMPROP_PROTOCOL.md",
+      "original_sha256": "8607185e8be70b332c209af34db67c611de97b6dea6ff057a8e17015cd723272",
+      "public_sha256": "c7e52e06490d37dd52aef7a5e422c918eb272fdca7fd3cdd84a8c87e64613e27",
+      "changes": [
+        "Machine-local paths redacted from environment metadata/protocol prose"
+      ]
+    },
+    {
+      "path": "docs/review_2026_10_14/CHEMPROP_UNCERTAINTY_PROTOCOL.md",
+      "original_sha256": "ba23da036d8796fa017e7efcc7656d8cbca8fc7d506ec597619ca31ae94dad75",
+      "public_sha256": "ba23da036d8796fa017e7efcc7656d8cbca8fc7d506ec597619ca31ae94dad75",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/COMPOSITION_PROTOCOL.md",
+      "original_sha256": "f2085b0d33ee20fb96a2c1e4f9b29611808052c5c72101e04a11f553932288c7",
+      "public_sha256": "f2085b0d33ee20fb96a2c1e4f9b29611808052c5c72101e04a11f553932288c7",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/SENSITIVITY_PROTOCOL.md",
+      "original_sha256": "8c0384834359fb4c6fdfb7fa5322c69bc213fc32aed2bd18061f80eaeae8d01d",
+      "public_sha256": "8c0384834359fb4c6fdfb7fa5322c69bc213fc32aed2bd18061f80eaeae8d01d",
+      "changes": []
+    },
+    {
+      "path": "docs/review_2026_10_14/STATISTICAL_PLAN.md",
+      "original_sha256": "84a8339fb30eb6eaf90fc8f1a48bd5445b620b8a4c9ab239305edccb4e194ba1",
+      "public_sha256": "84a8339fb30eb6eaf90fc8f1a48bd5445b620b8a4c9ab239305edccb4e194ba1",
+      "changes": []
+    },
+    {
+      "path": "docs/revision/EXPERIMENT_PROTOCOL.md",
+      "original_sha256": "144de9cde768ada78a5bbea01df018271da9df39d2caa55807d29a0cafaa982c",
+      "public_sha256": "144de9cde768ada78a5bbea01df018271da9df39d2caa55807d29a0cafaa982c",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/baseline_helper_snapshot.py",
+      "original_sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf",
+      "public_sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/code_snapshot.py",
+      "original_sha256": "47051967ac56dfe1d17a368967bfde5aa584df3f1d038d7079daaaa13cfcbab3",
+      "public_sha256": "47051967ac56dfe1d17a368967bfde5aa584df3f1d038d7079daaaa13cfcbab3",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/code_snapshots/80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c.py",
+      "original_sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c",
+      "public_sha256": "80016245a70e94d02f3ff414fc727b4cbec7dac8d80965e825268efea187c31c",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/environment.json",
+      "original_sha256": "ec266501059278ff06b0ad1c19eef5fb5ee0887fc9d9510e72109771f0bedc2b",
+      "public_sha256": "189a1fc10a7a297de3cd2d6ebeb304c21e2874fa6a81644a23fac74d05972716",
+      "changes": [
+        "Machine-local paths redacted from environment metadata/protocol prose"
+      ]
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/protocol_snapshot.md",
+      "original_sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf",
+      "public_sha256": "eedd90204323060efb2c373e0eb928f9bff466200a61aef0057e59f8ef3301bf",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/validation_script.py",
+      "original_sha256": "61e5529a24e187b9a573e86ecaaa8ddca5850dde7f159ec6152c7d9c79d7346e",
+      "public_sha256": "61e5529a24e187b9a573e86ecaaa8ddca5850dde7f159ec6152c7d9c79d7346e",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/code_snapshots/9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf.py",
+      "original_sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf",
+      "public_sha256": "9d6b69832535e77acd546188749834321146c52668e4b418ccc37da0f4da0fcf",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/code_snapshots/d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3.py",
+      "original_sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3",
+      "public_sha256": "d0e56ee2f9e10a0867d6ffb1154a13dfebdd0f04737de04e2c88fc19082a31a3",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/environment.json",
+      "original_sha256": "dd127a9bf96db0ef62671f5ab3cf515d8fabf4061c3ea88d98b3db8fd92bcbd0",
+      "public_sha256": "dd127a9bf96db0ef62671f5ab3cf515d8fabf4061c3ea88d98b3db8fd92bcbd0",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/protocol_snapshots/5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9.md",
+      "original_sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9",
+      "public_sha256": "5e9b785aab39d1b960f0c3ca40a83936dd37a48e79fa95789ffcc5f236b3e4d9",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/baselines/protocol_snapshots/d3f5a0bcf8e32bd1246f8debbc1410c67cf430493ff79e9e902310b34a16481d.md",
+      "original_sha256": "d3f5a0bcf8e32bd1246f8debbc1410c67cf430493ff79e9e902310b34a16481d",
+      "public_sha256": "d3f5a0bcf8e32bd1246f8debbc1410c67cf430493ff79e9e902310b34a16481d",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/config.json",
+      "original_sha256": "36077f3ad63585ce43a641dc7b8712a5748adea4d7eba43db632ac99105ec235",
+      "public_sha256": "36077f3ad63585ce43a641dc7b8712a5748adea4d7eba43db632ac99105ec235",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734.py",
+      "original_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "public_sha256": "3f676f7135d16b472bd1581ae7b0555a21b541cf0ba0b4dd9b1fc6b140280734",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5.py",
+      "original_sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5",
+      "public_sha256": "801eb2f002938275ea02b957eedf00f4e42da22d73bc1ec1de3684e038466dc5",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/971a2d6bd98b6f57d35e156934065d44f630784be6f93cd83ec3a63fb5f240b1.py",
+      "original_sha256": "971a2d6bd98b6f57d35e156934065d44f630784be6f93cd83ec3a63fb5f240b1",
+      "public_sha256": "971a2d6bd98b6f57d35e156934065d44f630784be6f93cd83ec3a63fb5f240b1",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34.py",
+      "original_sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34",
+      "public_sha256": "a2860ca83682deba64a209da2b4f7a6a92e10482366440403086d34512a9df34",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/ba5737eeca2c31e583e288cf1b8e2c872c5c10fb4ffdd8926d7bcad4f9134f56.py",
+      "original_sha256": "ba5737eeca2c31e583e288cf1b8e2c872c5c10fb4ffdd8926d7bcad4f9134f56",
+      "public_sha256": "ba5737eeca2c31e583e288cf1b8e2c872c5c10fb4ffdd8926d7bcad4f9134f56",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/code_snapshots/c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4.py",
+      "original_sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4",
+      "public_sha256": "c7bb241ea0d188e30a0c8eddbfccd3fffbb52b000cf6e46d135f40bc13841fa4",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/environment.json",
+      "original_sha256": "89e03939b30e900cd9a16865951f39b0659ceb5c4b81ac71d14668806057b6b9",
+      "public_sha256": "89e03939b30e900cd9a16865951f39b0659ceb5c4b81ac71d14668806057b6b9",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/protocol_snapshots/8607185e8be70b332c209af34db67c611de97b6dea6ff057a8e17015cd723272.md",
+      "original_sha256": "8607185e8be70b332c209af34db67c611de97b6dea6ff057a8e17015cd723272",
+      "public_sha256": "c7e52e06490d37dd52aef7a5e422c918eb272fdca7fd3cdd84a8c87e64613e27",
+      "changes": [
+        "Machine-local paths redacted from environment metadata/protocol prose"
+      ]
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop/requirements-lock.txt",
+      "original_sha256": "5a7e55b7cc997aed5e233dae411c18b4bdebe8df0161dfa37bd1f08662c69015",
+      "public_sha256": "5a7e55b7cc997aed5e233dae411c18b4bdebe8df0161dfa37bd1f08662c69015",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/config.json",
+      "original_sha256": "4f9f34546609d1f3a5be2d03e67a721ea937b7beeb33da190ac92ab6dc49540a",
+      "public_sha256": "4f9f34546609d1f3a5be2d03e67a721ea937b7beeb33da190ac92ab6dc49540a",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/cyclic_grid/config.json",
+      "original_sha256": "a21d5b0194613890e69aab99163060c387d605e186a63611678b9f97f0279a7e",
+      "public_sha256": "a21d5b0194613890e69aab99163060c387d605e186a63611678b9f97f0279a7e",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/knn/config.json",
+      "original_sha256": "aaada11ea106e0046e1dc286784ff7e75e3eae68a10a4ecdd428e9a3f9f4310f",
+      "public_sha256": "aaada11ea106e0046e1dc286784ff7e75e3eae68a10a4ecdd428e9a3f9f4310f",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/knn_matched_1024/config.json",
+      "original_sha256": "db04ceffa7ee42b6c19713fa70ceb01b990b18b70afca2ec9974767260061d2c",
+      "public_sha256": "db04ceffa7ee42b6c19713fa70ceb01b990b18b70afca2ec9974767260061d2c",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/baselines.py",
+      "original_sha256": "956e9f233b1cd8c266d61dd33c8c358e09bcaa77bf7932094f23bbd7f82a4d7e",
+      "public_sha256": "956e9f233b1cd8c266d61dd33c8c358e09bcaa77bf7932094f23bbd7f82a4d7e",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/sensitivity_2471939902b30d795d8e81617c2df9dd55047bfc4f5e6234cbbf2e8b56215a43.py",
+      "original_sha256": "2471939902b30d795d8e81617c2df9dd55047bfc4f5e6234cbbf2e8b56215a43",
+      "public_sha256": "2471939902b30d795d8e81617c2df9dd55047bfc4f5e6234cbbf2e8b56215a43",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/code_snapshots/sensitivity_24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82.py",
+      "original_sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82",
+      "public_sha256": "24fccceacffc7c8e60ad9426fed4638e5a90f3066b087ea26286401c8f77bb82",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/environment.json",
+      "original_sha256": "653cc996bfca72fdb1ee36e1de985458f78723902c55efa2c3a89e9e539866da",
+      "public_sha256": "653cc996bfca72fdb1ee36e1de985458f78723902c55efa2c3a89e9e539866da",
+      "changes": []
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/config.json",
+      "original_sha256": "f30a4468e0a8d828c1cc716f94e97fcbba4f0a087c51e8af1837452ad5a43b9b",
+      "public_sha256": "f30a4468e0a8d828c1cc716f94e97fcbba4f0a087c51e8af1837452ad5a43b9b",
+      "changes": []
+    },
+    {
+      "path": "results/revision/experiments/environment_architecture.json",
+      "original_sha256": "1e40518b889f51677d8d88824c64f567bc71c156f188b7fc7ad297d50a83a75c",
+      "public_sha256": "1e40518b889f51677d8d88824c64f567bc71c156f188b7fc7ad297d50a83a75c",
+      "changes": []
+    },
+    {
+      "path": "results/revision/experiments/environment_benchmark.json",
+      "original_sha256": "6659072dbe366740f7846db17fccf7ee1061ffcc27c8571acb2707ceb0fd1db0",
+      "public_sha256": "6659072dbe366740f7846db17fccf7ee1061ffcc27c8571acb2707ceb0fd1db0",
+      "changes": []
+    },
+    {
+      "path": "results/revision/experiments/environment_grid.json",
+      "original_sha256": "3fdea72ce48abc1522acd3847ba52cc0b17e60258de476a4ac120eada98c2324",
+      "public_sha256": "3fdea72ce48abc1522acd3847ba52cc0b17e60258de476a4ac120eada98c2324",
+      "changes": []
+    }
+  ],
+  "aggregate_tables": [
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/model_intervals.csv",
+      "rows": 648,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "regime",
+        "model",
+        "metric",
+        "mean",
+        "seed_sd",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws"
+      ],
+      "sha256": "3818301e942da74ce29a241c823f53439e947a98a36f8bd637362507bfe3167c",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/benchmark_uncertainty/frontier_minus_scaffold.csv",
+      "rows": 420,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "frontier",
+        "model",
+        "metric",
+        "delta_frontier_minus_scaffold",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws",
+        "multiplicity_adjusted"
+      ],
+      "sha256": "5da7dd7a634780634964b81c24ab22fc4ba23d4056b69b45e637f2c04c29aff3",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/model_intervals.csv",
+      "rows": 108,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "regime",
+        "model",
+        "metric",
+        "mean",
+        "seed_sd",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws"
+      ],
+      "sha256": "5edc8280ee096ade7e31e43da4790c56e58812b3c00d10a1affa67247c472db1",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/chemprop_uncertainty/frontier_minus_scaffold.csv",
+      "rows": 72,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "frontier",
+        "model",
+        "metric",
+        "delta_frontier_minus_scaffold",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws",
+        "multiplicity_adjusted"
+      ],
+      "sha256": "136de53e070c884593536910a3720591bce32a1966ac2d4d9592e254c6701794",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/runs.csv",
+      "rows": 1344,
+      "columns": [
+        "run_id",
+        "endpoint",
+        "mode",
+        "geometry",
+        "allocation_seed",
+        "representation",
+        "model",
+        "primary_metric",
+        "status",
+        "auroc",
+        "auprc",
+        "balanced_accuracy",
+        "f1",
+        "mcc",
+        "brier",
+        "ece",
+        "fitted_again",
+        "train_n",
+        "val_n",
+        "test_n",
+        "n_iter",
+        "test_positive_fraction",
+        "training_positive_fraction",
+        "warnings",
+        "seconds",
+        "script_sha256",
+        "config_sha256",
+        "prediction_sha256",
+        "canonical_run",
+        "mae",
+        "rmse",
+        "spearman",
+        "r2"
+      ],
+      "sha256": "60e67af18ad1cfd738bd76c4751e5c8c50d0d8721acf25508d096fba3f8fbc4a",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/allocation_controls/allocation_summary.csv",
+      "rows": 24,
+      "columns": [
+        "endpoint",
+        "geometry",
+        "representation",
+        "primary_metric",
+        "random_n",
+        "frontier_reference",
+        "random_mean",
+        "random_sd",
+        "random_median",
+        "random_q025",
+        "random_q975",
+        "frontier_minus_random_mean",
+        "empirical_difficulty_fraction",
+        "reverse_allocation_records",
+        "reverse_valid_primary_records",
+        "reverse_unique_partitions",
+        "reverse_mean_over_allocation_records",
+        "reverse_min",
+        "reverse_max",
+        "reference_test_n",
+        "reference_val_n",
+        "reverse_test_n_min",
+        "reverse_test_n_max",
+        "random_prevalence_q025",
+        "random_prevalence_q975",
+        "frontier_prevalence"
+      ],
+      "sha256": "2d6aea15290d3eaef457aa2f91c1ccb5e54070fd32d92e8eae8eeb17953e0e44",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/model_intervals.csv",
+      "rows": 80,
+      "columns": [
+        "scheme",
+        "family",
+        "regime",
+        "model",
+        "mean_auroc",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws"
+      ],
+      "sha256": "6586b1beec20116bfe37ddc434552dd9e108683fc51409b87a6931c44403201c",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/statistics/top1_frequency.csv",
+      "rows": 64,
+      "columns": [
+        "scheme",
+        "regime",
+        "model",
+        "point_auroc",
+        "point_rank",
+        "top1_frequency",
+        "mean_bootstrap_rank",
+        "valid_draws",
+        "invalid_draws",
+        "tied_top_draws"
+      ],
+      "sha256": "6e79cf98be03c28b584b82362e5b5f933354419b264cac75313b449ba0ec9ce6",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/sensitivities/runs.csv",
+      "rows": 1170,
+      "columns": [
+        "run_id",
+        "endpoint",
+        "variant",
+        "regime",
+        "seed",
+        "representation",
+        "model",
+        "task_kind",
+        "primary_metric",
+        "recipe",
+        "status",
+        "auroc",
+        "auprc",
+        "balanced_accuracy",
+        "f1",
+        "mcc",
+        "brier",
+        "ece",
+        "train_n",
+        "val_n",
+        "test_n",
+        "test_positive_fraction",
+        "training_median_mae",
+        "mae_skill",
+        "best_epoch",
+        "warnings",
+        "seconds",
+        "mae",
+        "rmse",
+        "spearman",
+        "r2"
+      ],
+      "sha256": "d988dad2636e2fdeb64115463e42fa7b921b81288855ba203e5a203a9839c49a",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/review_2026_10_14/composition/split_composition.csv",
+      "rows": 90,
+      "columns": [
+        "endpoint",
+        "regime",
+        "seed",
+        "target_test_fraction",
+        "train_n",
+        "val_n",
+        "test_n",
+        "realised_test_fraction",
+        "test_groups",
+        "largest_test_group_n",
+        "target_mean",
+        "target_sd",
+        "target_min",
+        "target_max",
+        "target_q25",
+        "target_q75",
+        "positive_fraction",
+        "training_median",
+        "median_baseline_mae",
+        "model_mae",
+        "mae_skill",
+        "auroc",
+        "auprc",
+        "multifragment_n",
+        "multifragment_fraction",
+        "charged_n",
+        "charged_fraction",
+        "metal_n",
+        "metal_fraction",
+        "acyclic_n",
+        "acyclic_fraction"
+      ],
+      "sha256": "329f7e65541f2c03bc178a5a9cea46cccee143bbccbfa2cb193d0fcec7d6d69d",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/revision/analysis/difficulty_distance_runs.csv",
+      "rows": 365,
+      "columns": [
+        "run_id",
+        "endpoint",
+        "regime",
+        "test_target",
+        "seed",
+        "primary_metric",
+        "train_n",
+        "test_n",
+        "performance",
+        "desc_geometry_nn_mean",
+        "desc_geometry_nn_median",
+        "morgan_geometry_nn_mean",
+        "morgan_geometry_nn_median"
+      ],
+      "sha256": "43588ed0991c72fd0714d87cfce4717971979ed5eb01ac44eb5d0d53379855cd",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure1_bbb_absolute_display.csv",
+      "rows": 20,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "regime",
+        "model",
+        "metric",
+        "mean",
+        "seed_sd",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws"
+      ],
+      "sha256": "bc187ec62563e6a7a0040849b542063ffffa37d0c6ce0c098369cd168433c996",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure1_endpoint_contrasts_display.csv",
+      "rows": 78,
+      "columns": [
+        "endpoint",
+        "subset",
+        "scheme",
+        "frontier",
+        "model",
+        "metric",
+        "delta_frontier_minus_scaffold",
+        "lower",
+        "upper",
+        "valid_draws",
+        "invalid_draws",
+        "multiplicity_adjusted"
+      ],
+      "sha256": "a600f2bb12c75af81bc27448ff78dbd50b694507d6b51289b049369a59a4f746",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure3_allocation_observations_display.csv",
+      "rows": 1344,
+      "columns": [
+        "run_id",
+        "endpoint",
+        "mode",
+        "geometry",
+        "allocation_seed",
+        "representation",
+        "model",
+        "primary_metric",
+        "status",
+        "auroc",
+        "auprc",
+        "balanced_accuracy",
+        "f1",
+        "mcc",
+        "brier",
+        "ece",
+        "fitted_again",
+        "train_n",
+        "val_n",
+        "test_n",
+        "n_iter",
+        "test_positive_fraction",
+        "training_positive_fraction",
+        "warnings",
+        "seconds",
+        "script_sha256",
+        "config_sha256",
+        "prediction_sha256",
+        "canonical_run",
+        "mae",
+        "rmse",
+        "spearman",
+        "r2",
+        "display_value"
+      ],
+      "sha256": "82c6dc74987de73b6e02102129e77245c1e0bdfbe10978f7dd44e1f2cd05b8d4",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    },
+    {
+      "path": "results/figures_2026_11_08/figure3_allocation_summary_display.csv",
+      "rows": 24,
+      "columns": [
+        "endpoint",
+        "geometry",
+        "representation",
+        "primary_metric",
+        "random_n",
+        "frontier_reference",
+        "random_mean",
+        "random_sd",
+        "random_median",
+        "random_q025",
+        "random_q975",
+        "frontier_minus_random_mean",
+        "empirical_difficulty_fraction",
+        "reverse_allocation_records",
+        "reverse_valid_primary_records",
+        "reverse_unique_partitions",
+        "reverse_mean_over_allocation_records",
+        "reverse_min",
+        "reverse_max",
+        "reference_test_n",
+        "reference_val_n",
+        "reverse_test_n_min",
+        "reverse_test_n_max",
+        "random_prevalence_q025",
+        "random_prevalence_q975",
+        "frontier_prevalence"
+      ],
+      "sha256": "ce3a543c7364be3d0c9272254cb0b2f2de301f43e5b91f1f5616a9de3070cd44",
+      "scope": "Aggregate fit/allocation or uncertainty records; no molecular structures, labels or molecule identifiers"
+    }
+  ],
+  "portability": "Only external QA installation paths, protocol/environment path text, and an internal source label are adapted. Scientific algorithms/settings are retained. The new helper/available-figure runner prepares public paths and invokes existing functions.",
+  "licence": "Repository existing MIT License, copyright2026JiachengZheng, retained unchanged. Third-party sources keep their own terms."
+}
