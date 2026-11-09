@@ -2,7 +2,7 @@
 
 The code companion for **Model-dependent ADMET performance under descriptor and fingerprint frontier evaluation** is in [revisions/2026_11_08/](revisions/2026_11_08/README.md). It adds symmetric descriptor/Morgan frontiers, stronger baselines, allocation controls and conditional ranking uncertainty. The original study and files below remain available as the preceding version.
 
-arXiv: https://arxiv.org/abs/2607.10729
+The preprint version is @arXiv: https://arxiv.org/abs/2607.10729
 
 # Structural-frontier OOD audit for ADMET models
 
