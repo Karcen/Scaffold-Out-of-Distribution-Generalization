@@ -1,21 +1,11 @@
-MIT License
+## License
 
-Copyright (c) 2026 Jiacheng Zheng
+This repository is released under the **Academic Research and Reproducibility License (ARRL) v1.0**.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The source code is freely available for non-commercial academic research, scientific reproducibility, education, and scholarly peer review.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Commercial use, redistribution, sublicensing, and incorporation into commercial products require prior written authorization from the copyright holder.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Please see the [LICENSE](LICENSE) file for the complete licensing terms.
+
+Researchers using this repository are required to provide appropriate academic attribution and cite the associated publication or software repository.
